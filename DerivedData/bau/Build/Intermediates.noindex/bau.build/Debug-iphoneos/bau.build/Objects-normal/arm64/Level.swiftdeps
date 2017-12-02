@@ -11,12 +11,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
 - !private "&&"
+- !private "+"
 - !private "-"
 - !private "..<"
 - !private "<"
 - !private "=="
 - !private ">="
 - !private "AnyObject"
+- !private "Array"
 - "Array2D"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
@@ -37,10 +39,12 @@ depends-top-level:
 - !private "assert"
 depends-member:
 - !private ["Sa", "enumerated"]
+- !private ["Sa", "subscript"]
 - ["3bau7Array2DV", "init"]
 - !private ["3bau7Array2DV", "subscript"]
 - !private ["s23BidirectionalCollectionP", "enumerated"]
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "enumerated"]
 - !private ["s7CVarArgP", "init"]
@@ -72,7 +76,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "insert"]
 - !private ["s23CustomStringConvertibleP", "loadJSONFromBundle"]
-- !private ["s23CustomStringConvertibleP", "random"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "shapeA"]
 - !private ["s23CustomStringConvertibleP", "shapeB"]
@@ -95,11 +98,11 @@ depends-member:
 - !private ["s9EquatableP", "column"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "insert"]
-- !private ["s9EquatableP", "random"]
 - !private ["s9EquatableP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "insert"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "loadJSONFromBundle"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
@@ -110,7 +113,6 @@ depends-member:
 - !private ["s8HashableP", "column"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "insert"]
-- !private ["s8HashableP", "random"]
 - !private ["s8HashableP", "row"]
 - !private ["3bau5LevelC", "AnyObject"]
 - ["3bau5LevelC", "Array2D"]
@@ -137,6 +139,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "enumerated"]
+- !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
@@ -146,9 +149,11 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
 - !private ["s22RandomAccessCollectionP", "enumerated"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
 - !private ["s26RangeReplaceableCollectionP", "enumerated"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "random"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s16RawRepresentableP", "init"]
 - !private ["s8SequenceP", "enumerated"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "insert"]
@@ -162,7 +167,8 @@ depends-member:
 - ["3bau5ShapeC", "deinit"]
 - !private ["3bau5ShapeC", "init"]
 - !private ["3bau5ShapeC", "row"]
-- !private ["3bau9ShapeTypeO", "random"]
+- !private ["3bau9ShapeTypeO", "deinit"]
+- !private ["3bau9ShapeTypeO", "init"]
 - !private ["s12StaticStringV", "init"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
@@ -172,9 +178,12 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["3bau4TileC", "init"]
 - !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s23_BidirectionalIndexableP", "enumerated"]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -194,6 +203,7 @@ depends-member:
 - !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s17_MutableIndexableP", "enumerated"]
+- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "enumerated"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -201,8 +211,10 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "loadJSONFromBundle"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s22_RandomAccessIndexableP", "enumerated"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
 - !private ["s26_RangeReplaceableIndexableP", "enumerated"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"

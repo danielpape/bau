@@ -15,7 +15,7 @@
 		9B528B461CBE41780038DCB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B528B451CBE41780038DCB0 /* Assets.xcassets */; };
 		9B528B491CBE41780038DCB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B528B471CBE41780038DCB0 /* LaunchScreen.storyboard */; };
 		9B528B531CBE42760038DCB0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B528B521CBE42760038DCB0 /* GameScene.swift */; };
-		9B528B551CBE4FD00038DCB0 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B528B541CBE4FD00038DCB0 /* Cookie.swift */; };
+		9B528B551CBE4FD00038DCB0 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B528B541CBE4FD00038DCB0 /* Shape.swift */; };
 		9B528B581CBE52310038DCB0 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B528B571CBE52310038DCB0 /* Array2D.swift */; };
 		9B528B5A1CBE52C20038DCB0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B528B591CBE52C20038DCB0 /* Level.swift */; };
 		9B528B641CBE596B0038DCB0 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B528B5F1CBE596B0038DCB0 /* Level_0.json */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37D4D07F1FD2D75B00DC3AC9 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = Sprites.atlas; path = ../../../../Documents/Graphic/bau/Sprites.atlas; sourceTree = "<group>"; };
+		37D4D07F1FD2D75B00DC3AC9 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		37D4D0811FD2DCFE00DC3AC9 /* Swap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 		9B528B371CBE41770038DCB0 /* bau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bau.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B528B3A1CBE41770038DCB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		9B528B481CBE41780038DCB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B528B4A1CBE41780038DCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B528B521CBE42760038DCB0 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		9B528B541CBE4FD00038DCB0 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		9B528B541CBE4FD00038DCB0 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		9B528B571CBE52310038DCB0 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		9B528B591CBE52C20038DCB0 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		9B528B5F1CBE596B0038DCB0 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		9B528B561CBE52250038DCB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9B528B541CBE4FD00038DCB0 /* Cookie.swift */,
+				9B528B541CBE4FD00038DCB0 /* Shape.swift */,
 				9B528B571CBE52310038DCB0 /* Array2D.swift */,
 				9B528B591CBE52C20038DCB0 /* Level.swift */,
 				9B528B691CBE597C0038DCB0 /* Tile.swift */,
@@ -232,7 +232,7 @@
 			files = (
 				9B528B5A1CBE52C20038DCB0 /* Level.swift in Sources */,
 				9B528B531CBE42760038DCB0 /* GameScene.swift in Sources */,
-				9B528B551CBE4FD00038DCB0 /* Cookie.swift in Sources */,
+				9B528B551CBE4FD00038DCB0 /* Shape.swift in Sources */,
 				9B528B6C1CBE5B2F0038DCB0 /* Extensions.swift in Sources */,
 				9B528B6A1CBE597C0038DCB0 /* Tile.swift in Sources */,
 				9B528B411CBE41780038DCB0 /* GameViewController.swift in Sources */,

@@ -13,6 +13,7 @@ struct Swap: CustomStringConvertible {
     init(shapeA: Shape, shapeB: Shape) {
         self.shapeA = shapeA
         self.shapeB = shapeB
+        
     }
     
     var description: String {

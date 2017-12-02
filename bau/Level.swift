@@ -60,12 +60,17 @@ class Level {
   fileprivate func createInitialShapes() -> Set<Shape> {
     var set = Set<Shape>()
     
+    let shapeArray = [1,2,4,3,5,6,8,7,9]
+    var arrayPosition:Int = 0
+    
     for row in 0..<3 {
       for column in 0..<3 {
         if tiles[column, row] != nil {
-          let shapeType = ShapeType.random() // Keep 'var'. Will be mutated later
+            
+          let shapeType = shapeArray[arrayPosition]
+            arrayPosition = arrayPosition + 1
           
-          let shape = Shape(column: column, row: row, shapeType: shapeType)
+            let shape = Shape(column: column, row: row, shapeType: ShapeType(rawValue: shapeType)!)
           shapes[column, row] = shape
           
           set.insert(shape)
@@ -105,6 +110,22 @@ class Level {
         shapes[columnB, rowB] = swap.shapeA
         swap.shapeA.column = columnB
         swap.shapeA.row = rowB
+        
+        detectHorizontalMatches()
+        
+    }
+    
+    private func detectHorizontalMatches() {
+
+        for row in 0..<NumRows {
+            var column = 0
+            while column < NumColumns {
+                var shapeColor = shapeAt(column: column, row: row)!.description.prefix(3)
+                var shapeType = shapeAt(column: column, row: row)!.description.suffix(3)
+                print("Color:",shapeColor,"Shape:",shapeType,"Row:",row+1,"Column",column+1)
+                column += 1
+            }
+        }
     }
   
 }
