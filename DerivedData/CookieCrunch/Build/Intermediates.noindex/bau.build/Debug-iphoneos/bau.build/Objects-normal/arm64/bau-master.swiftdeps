@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "eb30b5438b84b93003fff40d2dcb8ca2"
+build_time: [1512218197, 19010000]
+inputs:
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/Level.swift": [1512217490, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/GameScene.swift": [1512218001, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/Cookie.swift": [1512217490, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/Extensions.swift": [1512217490, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/Tile.swift": [1512217490, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/GameViewController.swift": [1512217910, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/AppDelegate.swift": [1512217490, 0]
+  "/Users/dan/Downloads/CookieCrunch - Sample Part 1/bau/Array2D.swift": [1512217490, 0]

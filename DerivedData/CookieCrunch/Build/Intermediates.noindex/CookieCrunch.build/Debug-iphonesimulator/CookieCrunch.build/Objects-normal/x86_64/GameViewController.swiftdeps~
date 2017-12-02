@@ -1,0 +1,548 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GameViewController"
+provides-nominal:
+- "12CookieCrunch18GameViewControllerC"
+provides-member:
+- ["12CookieCrunch18GameViewControllerC", ""]
+provides-dynamic-lookup:
+- "beginGame"
+- "prefersStatusBarHidden"
+- "scene"
+- "shouldAutorotate"
+- "shuffle"
+- "supportedInterfaceOrientations"
+- "viewDidLoad"
+depends-top-level:
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "GameScene"
+- "GameViewController"
+- "Level"
+- !private "SKView"
+- !private "StringLiteralType"
+- "UIInterfaceOrientationMask"
+- "UIViewController"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["So15CALayerDelegateP", "bounds"]
+- !private ["So15CALayerDelegateP", "isMultipleTouchEnabled"]
+- !private ["So15CALayerDelegateP", "presentScene"]
+- !private ["SC6CGRectV", "size"]
+- !private ["s7CVarArgP", "GameScene"]
+- !private ["s7CVarArgP", "Level"]
+- !private ["s7CVarArgP", "addSprites"]
+- !private ["s7CVarArgP", "beginGame"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isMultipleTouchEnabled"]
+- !private ["s7CVarArgP", "level"]
+- !private ["s7CVarArgP", "presentScene"]
+- !private ["s7CVarArgP", "scaleMode"]
+- !private ["s7CVarArgP", "scene"]
+- !private ["s7CVarArgP", "shuffle"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "GameScene"]
+- !private ["s28CustomDebugStringConvertibleP", "Level"]
+- !private ["s28CustomDebugStringConvertibleP", "addSprites"]
+- !private ["s28CustomDebugStringConvertibleP", "beginGame"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isMultipleTouchEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "level"]
+- !private ["s28CustomDebugStringConvertibleP", "presentScene"]
+- !private ["s28CustomDebugStringConvertibleP", "scaleMode"]
+- !private ["s28CustomDebugStringConvertibleP", "scene"]
+- !private ["s28CustomDebugStringConvertibleP", "shuffle"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s23CustomStringConvertibleP", "GameScene"]
+- !private ["s23CustomStringConvertibleP", "Level"]
+- !private ["s23CustomStringConvertibleP", "addSprites"]
+- !private ["s23CustomStringConvertibleP", "beginGame"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isMultipleTouchEnabled"]
+- !private ["s23CustomStringConvertibleP", "level"]
+- !private ["s23CustomStringConvertibleP", "presentScene"]
+- !private ["s23CustomStringConvertibleP", "scaleMode"]
+- !private ["s23CustomStringConvertibleP", "scene"]
+- !private ["s23CustomStringConvertibleP", "shuffle"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "size"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "size"]
+- !private ["s9EquatableP", "GameScene"]
+- !private ["s9EquatableP", "Level"]
+- !private ["s9EquatableP", "addSprites"]
+- !private ["s9EquatableP", "aspectFill"]
+- !private ["s9EquatableP", "beginGame"]
+- !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isMultipleTouchEnabled"]
+- !private ["s9EquatableP", "level"]
+- !private ["s9EquatableP", "portrait"]
+- !private ["s9EquatableP", "portraitUpsideDown"]
+- !private ["s9EquatableP", "presentScene"]
+- !private ["s9EquatableP", "scaleMode"]
+- !private ["s9EquatableP", "scene"]
+- !private ["s9EquatableP", "shuffle"]
+- !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "view"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- ["s9EquatableP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "portrait"]
+- !private ["s25ExpressibleByArrayLiteralP", "portraitUpsideDown"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["12CookieCrunch9GameSceneC", "addSprites"]
+- !private ["12CookieCrunch9GameSceneC", "deinit"]
+- !private ["12CookieCrunch9GameSceneC", "init"]
+- !private ["12CookieCrunch9GameSceneC", "level"]
+- !private ["12CookieCrunch9GameSceneC", "scaleMode"]
+- ["12CookieCrunch18GameViewControllerC", "Bool"]
+- ["12CookieCrunch18GameViewControllerC", "GameScene"]
+- ["12CookieCrunch18GameViewControllerC", "Level"]
+- !private ["12CookieCrunch18GameViewControllerC", "SKView"]
+- ["12CookieCrunch18GameViewControllerC", "UIInterfaceOrientationMask"]
+- ["12CookieCrunch18GameViewControllerC", "beginGame"]
+- ["12CookieCrunch18GameViewControllerC", "deinit"]
+- ["12CookieCrunch18GameViewControllerC", "init"]
+- ["12CookieCrunch18GameViewControllerC", "level"]
+- ["12CookieCrunch18GameViewControllerC", "prefersStatusBarHidden"]
+- ["12CookieCrunch18GameViewControllerC", "scene"]
+- ["12CookieCrunch18GameViewControllerC", "shouldAutorotate"]
+- ["12CookieCrunch18GameViewControllerC", "shuffle"]
+- ["12CookieCrunch18GameViewControllerC", "supportedInterfaceOrientations"]
+- !private ["12CookieCrunch18GameViewControllerC", "view"]
+- ["12CookieCrunch18GameViewControllerC", "viewDidLoad"]
+- !private ["s8HashableP", "GameScene"]
+- !private ["s8HashableP", "Level"]
+- !private ["s8HashableP", "addSprites"]
+- !private ["s8HashableP", "aspectFill"]
+- !private ["s8HashableP", "beginGame"]
+- !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isMultipleTouchEnabled"]
+- !private ["s8HashableP", "level"]
+- !private ["s8HashableP", "presentScene"]
+- !private ["s8HashableP", "scaleMode"]
+- !private ["s8HashableP", "scene"]
+- !private ["s8HashableP", "shuffle"]
+- !private ["s8HashableP", "view"]
+- !private ["s8HashableP", "viewDidLoad"]
+- ["s8HashableP", ""]
+- !private ["12CookieCrunch5LevelC", "init"]
+- !private ["12CookieCrunch5LevelC", "shuffle"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "GameScene"]
+- !private ["So8NSCodingP", "Level"]
+- !private ["So8NSCodingP", "addSprites"]
+- !private ["So8NSCodingP", "beginGame"]
+- !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isMultipleTouchEnabled"]
+- !private ["So8NSCodingP", "level"]
+- !private ["So8NSCodingP", "presentScene"]
+- !private ["So8NSCodingP", "scaleMode"]
+- !private ["So8NSCodingP", "scene"]
+- !private ["So8NSCodingP", "shuffle"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "addSprites"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "level"]
+- !private ["So9NSCopyingP", "scaleMode"]
+- !private ["So26NSExtensionRequestHandlingP", "GameScene"]
+- !private ["So26NSExtensionRequestHandlingP", "Level"]
+- !private ["So26NSExtensionRequestHandlingP", "beginGame"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "level"]
+- !private ["So26NSExtensionRequestHandlingP", "scene"]
+- !private ["So26NSExtensionRequestHandlingP", "shuffle"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "GameScene"]
+- ["So8NSObjectC", "Level"]
+- !private ["So8NSObjectC", "SKView"]
+- ["So8NSObjectC", "UIInterfaceOrientationMask"]
+- !private ["So8NSObjectC", "addSprites"]
+- ["So8NSObjectC", "beginGame"]
+- !private ["So8NSObjectC", "bounds"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isMultipleTouchEnabled"]
+- ["So8NSObjectC", "level"]
+- ["So8NSObjectC", "prefersStatusBarHidden"]
+- !private ["So8NSObjectC", "presentScene"]
+- !private ["So8NSObjectC", "scaleMode"]
+- ["So8NSObjectC", "scene"]
+- ["So8NSObjectC", "shouldAutorotate"]
+- ["So8NSObjectC", "shuffle"]
+- ["So8NSObjectC", "supportedInterfaceOrientations"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "GameScene"]
+- !private ["So16NSObjectProtocolP", "Level"]
+- !private ["So16NSObjectProtocolP", "addSprites"]
+- !private ["So16NSObjectProtocolP", "beginGame"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isMultipleTouchEnabled"]
+- !private ["So16NSObjectProtocolP", "level"]
+- !private ["So16NSObjectProtocolP", "presentScene"]
+- !private ["So16NSObjectProtocolP", "scaleMode"]
+- !private ["So16NSObjectProtocolP", "scene"]
+- !private ["So16NSObjectProtocolP", "shuffle"]
+- !private ["So16NSObjectProtocolP", "view"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s9OptionSetP", "portrait"]
+- !private ["s9OptionSetP", "portraitUpsideDown"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "aspectFill"]
+- !private ["s16RawRepresentableP", "portrait"]
+- !private ["s16RawRepresentableP", "portraitUpsideDown"]
+- !private ["So12SKEffectNodeC", "addSprites"]
+- !private ["So12SKEffectNodeC", "level"]
+- !private ["So12SKEffectNodeC", "scaleMode"]
+- !private ["So6SKNodeC", "addSprites"]
+- !private ["So6SKNodeC", "level"]
+- !private ["So6SKNodeC", "scaleMode"]
+- !private ["So7SKSceneC", "addSprites"]
+- !private ["So7SKSceneC", "level"]
+- !private ["So7SKSceneC", "scaleMode"]
+- !private ["SC16SKSceneScaleModeO", "aspectFill"]
+- !private ["So6SKViewC", "bounds"]
+- !private ["So6SKViewC", "isMultipleTouchEnabled"]
+- !private ["So6SKViewC", "presentScene"]
+- !private ["So10SKWarpableP", "addSprites"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["So10SKWarpableP", "level"]
+- !private ["So10SKWarpableP", "scaleMode"]
+- !private ["s8SequenceP", "init"]
+- !private ["s10SetAlgebraP", "portrait"]
+- !private ["s10SetAlgebraP", "portraitUpsideDown"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "bounds"]
+- !private ["So29UIAccessibilityIdentificationP", "isMultipleTouchEnabled"]
+- !private ["So29UIAccessibilityIdentificationP", "presentScene"]
+- !private ["So12UIAppearanceP", "bounds"]
+- !private ["So12UIAppearanceP", "isMultipleTouchEnabled"]
+- !private ["So12UIAppearanceP", "presentScene"]
+- !private ["So21UIAppearanceContainerP", "GameScene"]
+- !private ["So21UIAppearanceContainerP", "Level"]
+- !private ["So21UIAppearanceContainerP", "beginGame"]
+- !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isMultipleTouchEnabled"]
+- !private ["So21UIAppearanceContainerP", "level"]
+- !private ["So21UIAppearanceContainerP", "presentScene"]
+- !private ["So21UIAppearanceContainerP", "scene"]
+- !private ["So21UIAppearanceContainerP", "shuffle"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "GameScene"]
+- !private ["So18UIContentContainerP", "Level"]
+- !private ["So18UIContentContainerP", "beginGame"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "level"]
+- !private ["So18UIContentContainerP", "scene"]
+- !private ["So18UIContentContainerP", "shuffle"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So17UICoordinateSpaceP", "bounds"]
+- !private ["So17UICoordinateSpaceP", "isMultipleTouchEnabled"]
+- !private ["So17UICoordinateSpaceP", "presentScene"]
+- !private ["So13UIDynamicItemP", "bounds"]
+- !private ["So13UIDynamicItemP", "isMultipleTouchEnabled"]
+- !private ["So13UIDynamicItemP", "presentScene"]
+- !private ["So18UIFocusEnvironmentP", "GameScene"]
+- !private ["So18UIFocusEnvironmentP", "Level"]
+- !private ["So18UIFocusEnvironmentP", "addSprites"]
+- !private ["So18UIFocusEnvironmentP", "beginGame"]
+- !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isMultipleTouchEnabled"]
+- !private ["So18UIFocusEnvironmentP", "level"]
+- !private ["So18UIFocusEnvironmentP", "presentScene"]
+- !private ["So18UIFocusEnvironmentP", "scaleMode"]
+- !private ["So18UIFocusEnvironmentP", "scene"]
+- !private ["So18UIFocusEnvironmentP", "shuffle"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "addSprites"]
+- !private ["So11UIFocusItemP", "bounds"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "isMultipleTouchEnabled"]
+- !private ["So11UIFocusItemP", "level"]
+- !private ["So11UIFocusItemP", "presentScene"]
+- !private ["So11UIFocusItemP", "scaleMode"]
+- !private ["SC26UIInterfaceOrientationMaskV", "portrait"]
+- !private ["SC26UIInterfaceOrientationMaskV", "portraitUpsideDown"]
+- !private ["So30UIPasteConfigurationSupportingP", "GameScene"]
+- !private ["So30UIPasteConfigurationSupportingP", "Level"]
+- !private ["So30UIPasteConfigurationSupportingP", "addSprites"]
+- !private ["So30UIPasteConfigurationSupportingP", "beginGame"]
+- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isMultipleTouchEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "level"]
+- !private ["So30UIPasteConfigurationSupportingP", "presentScene"]
+- !private ["So30UIPasteConfigurationSupportingP", "scaleMode"]
+- !private ["So30UIPasteConfigurationSupportingP", "scene"]
+- !private ["So30UIPasteConfigurationSupportingP", "shuffle"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "GameScene"]
+- ["So11UIResponderC", "Level"]
+- !private ["So11UIResponderC", "SKView"]
+- ["So11UIResponderC", "UIInterfaceOrientationMask"]
+- !private ["So11UIResponderC", "addSprites"]
+- ["So11UIResponderC", "beginGame"]
+- !private ["So11UIResponderC", "bounds"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isMultipleTouchEnabled"]
+- ["So11UIResponderC", "level"]
+- ["So11UIResponderC", "prefersStatusBarHidden"]
+- !private ["So11UIResponderC", "presentScene"]
+- !private ["So11UIResponderC", "scaleMode"]
+- ["So11UIResponderC", "scene"]
+- ["So11UIResponderC", "shouldAutorotate"]
+- ["So11UIResponderC", "shuffle"]
+- ["So11UIResponderC", "supportedInterfaceOrientations"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "GameScene"]
+- !private ["So30UIResponderStandardEditActionsP", "Level"]
+- !private ["So30UIResponderStandardEditActionsP", "addSprites"]
+- !private ["So30UIResponderStandardEditActionsP", "beginGame"]
+- !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isMultipleTouchEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "level"]
+- !private ["So30UIResponderStandardEditActionsP", "presentScene"]
+- !private ["So30UIResponderStandardEditActionsP", "scaleMode"]
+- !private ["So30UIResponderStandardEditActionsP", "scene"]
+- !private ["So30UIResponderStandardEditActionsP", "shuffle"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So16UIStateRestoringP", "GameScene"]
+- !private ["So16UIStateRestoringP", "Level"]
+- !private ["So16UIStateRestoringP", "beginGame"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "level"]
+- !private ["So16UIStateRestoringP", "scene"]
+- !private ["So16UIStateRestoringP", "shuffle"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So18UITraitEnvironmentP", "GameScene"]
+- !private ["So18UITraitEnvironmentP", "Level"]
+- !private ["So18UITraitEnvironmentP", "beginGame"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isMultipleTouchEnabled"]
+- !private ["So18UITraitEnvironmentP", "level"]
+- !private ["So18UITraitEnvironmentP", "presentScene"]
+- !private ["So18UITraitEnvironmentP", "scene"]
+- !private ["So18UITraitEnvironmentP", "shuffle"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So6UIViewC", "bounds"]
+- !private ["So6UIViewC", "isMultipleTouchEnabled"]
+- !private ["So6UIViewC", "presentScene"]
+- ["So16UIViewControllerC", "Bool"]
+- ["So16UIViewControllerC", "GameScene"]
+- ["So16UIViewControllerC", "Level"]
+- !private ["So16UIViewControllerC", "SKView"]
+- ["So16UIViewControllerC", "UIInterfaceOrientationMask"]
+- ["So16UIViewControllerC", "beginGame"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "level"]
+- ["So16UIViewControllerC", "prefersStatusBarHidden"]
+- ["So16UIViewControllerC", "scene"]
+- ["So16UIViewControllerC", "shouldAutorotate"]
+- ["So16UIViewControllerC", "shuffle"]
+- ["So16UIViewControllerC", "supportedInterfaceOrientations"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", ""]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "bounds"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isMultipleTouchEnabled"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "presentScene"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GameScene"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Level"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSprites"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "beginGame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isMultipleTouchEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "level"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "presentScene"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scaleMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scene"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shuffle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "So15CALayerDelegateP"
+- !private "SC6CGRectV"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "12CookieCrunch9GameSceneC"
+- "12CookieCrunch18GameViewControllerC"
+- "s8HashableP"
+- !private "12CookieCrunch5LevelC"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s9OptionSetP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "So12SKEffectNodeC"
+- !private "So6SKNodeC"
+- !private "So7SKSceneC"
+- !private "SC16SKSceneScaleModeO"
+- !private "So6SKViewC"
+- !private "So10SKWarpableP"
+- !private "s8SequenceP"
+- !private "s10SetAlgebraP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "SC26UIInterfaceOrientationMaskV"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "89855734535edd3292b0a99bfad93c01"
