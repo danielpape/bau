@@ -48,6 +48,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hik-OY-6Dj">
+                                        <rect key="frame" x="129" y="-5" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <state key="normal" title="Reset puzzle"/>
+                                        <connections>
+                                            <action selector="tapResetButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zd0-fT-0OL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -82,6 +91,7 @@
                     <connections>
                         <outlet property="gameOverLabel" destination="4hI-ZZ-MBd" id="BxR-ap-unI"/>
                         <outlet property="movesLabel" destination="Gsp-mb-LPh" id="4Dg-86-IZp"/>
+                        <outlet property="resetPuzzleButton" destination="Hik-OY-6Dj" id="2Fm-NC-Mk9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

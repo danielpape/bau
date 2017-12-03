@@ -21,6 +21,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var movesLabel: UILabel!
     @IBOutlet weak var gameOverLabel: UILabel!
+    @IBOutlet weak var resetPuzzleButton: UIButton!
     
   
   override var prefersStatusBarHidden: Bool {
@@ -42,6 +43,7 @@ class GameViewController: UIViewController {
     skView.isMultipleTouchEnabled = false
     
     gameOverLabel.isHidden = true
+    resetPuzzleButton.isHidden = true
     
     self.view?.backgroundColor = UIColor.white
 
@@ -57,10 +59,36 @@ class GameViewController: UIViewController {
     
     beginGame()
   }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let skView = view as! SKView
+        skView.isMultipleTouchEnabled = false
+        
+        gameOverLabel.isHidden = true
+        resetPuzzleButton.isHidden = true
+        
+        self.view?.backgroundColor = UIColor.white
+        
+        scene = GameScene(size: skView.bounds.size)
+        scene.scaleMode = .aspectFill
+        
+        level = Level(filename: "Level_1")
+        scene.level = level
+        
+        scene.swipeHandler = handleSwipe
+        
+        skView.presentScene(scene)
+        
+        beginGame()
+    }
   
   func beginGame() {
     movesLeft = level.maximumMoves
+    movesLabel.isHidden = false
+    resetPuzzleButton.isHidden = true
     updateLabels()
+    scene.gameLayer.alpha = 1
+    scene.isUserInteractionEnabled = true
     shuffle()
   }
   
@@ -91,6 +119,8 @@ class GameViewController: UIViewController {
             gameOverLabel.isHidden = false
             scene.gameLayer.alpha = 0.2
             scene.isUserInteractionEnabled = false
+            resetPuzzleButton.isHidden = false
+            movesLabel.isHidden = true
             }
     }
   
@@ -102,4 +132,9 @@ class GameViewController: UIViewController {
     func success(){
         movesLabel.text = "Completed"
     }
+    @IBAction func tapResetButton(_ sender: Any) {
+        viewWillAppear(true)
+    }
+    
+    
 }

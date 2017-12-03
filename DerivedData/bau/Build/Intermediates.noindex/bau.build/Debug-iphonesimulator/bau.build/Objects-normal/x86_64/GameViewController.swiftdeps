@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 - "movesLabel"
 - "movesLeft"
 - "prefersStatusBarHidden"
+- "resetPuzzleButton"
 - "scene"
 - "score"
 - "shouldAutorotate"
@@ -20,8 +21,10 @@ provides-dynamic-lookup:
 - "success"
 - "supportedInterfaceOrientations"
 - "tapGestureRecognizer"
+- "tapResetButton"
 - "updateLabels"
 - "viewDidLoad"
+- "viewWillAppear"
 depends-top-level:
 - !private "!="
 - !private "&&"
@@ -40,6 +43,7 @@ depends-top-level:
 - !private "String"
 - "StringLiteralType"
 - "Swap"
+- "UIButton"
 - !private "UIColor"
 - "UIInterfaceOrientationMask"
 - "UILabel"
@@ -77,6 +81,7 @@ depends-member:
 - !private ["s7CVarArgP", "movesLabel"]
 - !private ["s7CVarArgP", "movesLeft"]
 - !private ["s7CVarArgP", "presentScene"]
+- !private ["s7CVarArgP", "resetPuzzleButton"]
 - !private ["s7CVarArgP", "scaleMode"]
 - !private ["s7CVarArgP", "scene"]
 - !private ["s7CVarArgP", "shuffle"]
@@ -85,6 +90,7 @@ depends-member:
 - !private ["s7CVarArgP", "updateLabels"]
 - !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "white"]
 - ["s7CVarArgP", ""]
 - ["s10CollectionP", "init"]
@@ -110,6 +116,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "movesLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "movesLeft"]
 - !private ["s28CustomDebugStringConvertibleP", "presentScene"]
+- !private ["s28CustomDebugStringConvertibleP", "resetPuzzleButton"]
 - !private ["s28CustomDebugStringConvertibleP", "scaleMode"]
 - !private ["s28CustomDebugStringConvertibleP", "scene"]
 - !private ["s28CustomDebugStringConvertibleP", "shuffle"]
@@ -119,6 +126,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "updateLabels"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -149,6 +157,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "movesLabel"]
 - !private ["s23CustomStringConvertibleP", "movesLeft"]
 - !private ["s23CustomStringConvertibleP", "presentScene"]
+- !private ["s23CustomStringConvertibleP", "resetPuzzleButton"]
 - !private ["s23CustomStringConvertibleP", "scaleMode"]
 - !private ["s23CustomStringConvertibleP", "scene"]
 - !private ["s23CustomStringConvertibleP", "shuffle"]
@@ -157,6 +166,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "updateLabels"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewWillAppear"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
@@ -190,6 +200,7 @@ depends-member:
 - !private ["s9EquatableP", "portrait"]
 - !private ["s9EquatableP", "portraitUpsideDown"]
 - !private ["s9EquatableP", "presentScene"]
+- !private ["s9EquatableP", "resetPuzzleButton"]
 - !private ["s9EquatableP", "scaleMode"]
 - !private ["s9EquatableP", "scene"]
 - !private ["s9EquatableP", "shuffle"]
@@ -199,6 +210,7 @@ depends-member:
 - !private ["s9EquatableP", "updateLabels"]
 - !private ["s9EquatableP", "view"]
 - !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s9EquatableP", "viewWillAppear"]
 - !private ["s9EquatableP", "white"]
 - ["s9EquatableP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "portrait"]
@@ -222,6 +234,7 @@ depends-member:
 - !private ["3bau18GameViewControllerC", "SKView"]
 - !private ["3bau18GameViewControllerC", "String"]
 - ["3bau18GameViewControllerC", "Swap"]
+- ["3bau18GameViewControllerC", "UIButton"]
 - !private ["3bau18GameViewControllerC", "UIColor"]
 - ["3bau18GameViewControllerC", "UIInterfaceOrientationMask"]
 - ["3bau18GameViewControllerC", "UILabel"]
@@ -237,6 +250,7 @@ depends-member:
 - ["3bau18GameViewControllerC", "movesLabel"]
 - ["3bau18GameViewControllerC", "movesLeft"]
 - ["3bau18GameViewControllerC", "prefersStatusBarHidden"]
+- ["3bau18GameViewControllerC", "resetPuzzleButton"]
 - ["3bau18GameViewControllerC", "scene"]
 - ["3bau18GameViewControllerC", "score"]
 - ["3bau18GameViewControllerC", "shouldAutorotate"]
@@ -244,9 +258,11 @@ depends-member:
 - ["3bau18GameViewControllerC", "success"]
 - ["3bau18GameViewControllerC", "supportedInterfaceOrientations"]
 - ["3bau18GameViewControllerC", "tapGestureRecognizer"]
+- ["3bau18GameViewControllerC", "tapResetButton"]
 - ["3bau18GameViewControllerC", "updateLabels"]
 - !private ["3bau18GameViewControllerC", "view"]
 - ["3bau18GameViewControllerC", "viewDidLoad"]
+- ["3bau18GameViewControllerC", "viewWillAppear"]
 - !private ["s8HashableP", "GameScene"]
 - !private ["s8HashableP", "Level"]
 - !private ["s8HashableP", "String"]
@@ -270,6 +286,7 @@ depends-member:
 - !private ["s8HashableP", "movesLabel"]
 - !private ["s8HashableP", "movesLeft"]
 - !private ["s8HashableP", "presentScene"]
+- !private ["s8HashableP", "resetPuzzleButton"]
 - !private ["s8HashableP", "scaleMode"]
 - !private ["s8HashableP", "scene"]
 - !private ["s8HashableP", "shuffle"]
@@ -278,6 +295,7 @@ depends-member:
 - !private ["s8HashableP", "updateLabels"]
 - !private ["s8HashableP", "view"]
 - !private ["s8HashableP", "viewDidLoad"]
+- !private ["s8HashableP", "viewWillAppear"]
 - !private ["s8HashableP", "white"]
 - ["s8HashableP", ""]
 - !private ["3bau5LevelC", "completed"]
@@ -309,6 +327,7 @@ depends-member:
 - !private ["So8NSCodingP", "movesLabel"]
 - !private ["So8NSCodingP", "movesLeft"]
 - !private ["So8NSCodingP", "presentScene"]
+- !private ["So8NSCodingP", "resetPuzzleButton"]
 - !private ["So8NSCodingP", "scaleMode"]
 - !private ["So8NSCodingP", "scene"]
 - !private ["So8NSCodingP", "shuffle"]
@@ -317,6 +336,7 @@ depends-member:
 - !private ["So8NSCodingP", "updateLabels"]
 - !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewWillAppear"]
 - !private ["So8NSCodingP", "white"]
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "addSprites"]
@@ -340,11 +360,13 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "level"]
 - !private ["So26NSExtensionRequestHandlingP", "movesLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "movesLeft"]
+- !private ["So26NSExtensionRequestHandlingP", "resetPuzzleButton"]
 - !private ["So26NSExtensionRequestHandlingP", "scene"]
 - !private ["So26NSExtensionRequestHandlingP", "shuffle"]
 - !private ["So26NSExtensionRequestHandlingP", "updateLabels"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "white"]
@@ -357,6 +379,7 @@ depends-member:
 - !private ["So8NSObjectC", "SKView"]
 - !private ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "Swap"]
+- ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIInterfaceOrientationMask"]
 - ["So8NSObjectC", "UILabel"]
@@ -381,6 +404,7 @@ depends-member:
 - ["So8NSObjectC", "movesLeft"]
 - ["So8NSObjectC", "prefersStatusBarHidden"]
 - !private ["So8NSObjectC", "presentScene"]
+- ["So8NSObjectC", "resetPuzzleButton"]
 - !private ["So8NSObjectC", "scaleMode"]
 - ["So8NSObjectC", "scene"]
 - ["So8NSObjectC", "score"]
@@ -390,10 +414,12 @@ depends-member:
 - ["So8NSObjectC", "supportedInterfaceOrientations"]
 - !private ["So8NSObjectC", "swipeHandler"]
 - ["So8NSObjectC", "tapGestureRecognizer"]
+- ["So8NSObjectC", "tapResetButton"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "updateLabels"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillAppear"]
 - !private ["So8NSObjectC", "white"]
 - !private ["So16NSObjectProtocolP", "GameScene"]
 - !private ["So16NSObjectProtocolP", "Level"]
@@ -416,6 +442,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "movesLabel"]
 - !private ["So16NSObjectProtocolP", "movesLeft"]
 - !private ["So16NSObjectProtocolP", "presentScene"]
+- !private ["So16NSObjectProtocolP", "resetPuzzleButton"]
 - !private ["So16NSObjectProtocolP", "scaleMode"]
 - !private ["So16NSObjectProtocolP", "scene"]
 - !private ["So16NSObjectProtocolP", "shuffle"]
@@ -424,6 +451,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "updateLabels"]
 - !private ["So16NSObjectProtocolP", "view"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "viewWillAppear"]
 - !private ["So16NSObjectProtocolP", "white"]
 - ["So16NSObjectProtocolP", ""]
 - ["So14NSSecureCodingP", "init"]
@@ -476,6 +504,7 @@ depends-member:
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isHidden"]
 - !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
 - !private ["So29UIAccessibilityIdentificationP", "isHidden"]
@@ -507,13 +536,16 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "movesLabel"]
 - !private ["So21UIAppearanceContainerP", "movesLeft"]
 - !private ["So21UIAppearanceContainerP", "presentScene"]
+- !private ["So21UIAppearanceContainerP", "resetPuzzleButton"]
 - !private ["So21UIAppearanceContainerP", "scene"]
 - !private ["So21UIAppearanceContainerP", "shuffle"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "updateLabels"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewWillAppear"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So8UIButtonC", "isHidden"]
 - !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "GameScene"]
 - !private ["So18UIContentContainerP", "Level"]
@@ -526,14 +558,17 @@ depends-member:
 - !private ["So18UIContentContainerP", "level"]
 - !private ["So18UIContentContainerP", "movesLabel"]
 - !private ["So18UIContentContainerP", "movesLeft"]
+- !private ["So18UIContentContainerP", "resetPuzzleButton"]
 - !private ["So18UIContentContainerP", "scene"]
 - !private ["So18UIContentContainerP", "shuffle"]
 - !private ["So18UIContentContainerP", "updateLabels"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "viewWillAppear"]
 - ["So18UIContentContainerP", ""]
 - !private ["So30UIContentSizeCategoryAdjustingP", "isHidden"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "isHidden"]
 - !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
 - !private ["So17UICoordinateSpaceP", "isHidden"]
@@ -569,6 +604,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "movesLabel"]
 - !private ["So18UIFocusEnvironmentP", "movesLeft"]
 - !private ["So18UIFocusEnvironmentP", "presentScene"]
+- !private ["So18UIFocusEnvironmentP", "resetPuzzleButton"]
 - !private ["So18UIFocusEnvironmentP", "scaleMode"]
 - !private ["So18UIFocusEnvironmentP", "scene"]
 - !private ["So18UIFocusEnvironmentP", "shuffle"]
@@ -577,6 +613,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "updateLabels"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "addSprites"]
 - !private ["So11UIFocusItemP", "alpha"]
@@ -618,6 +655,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "movesLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "movesLeft"]
 - !private ["So30UIPasteConfigurationSupportingP", "presentScene"]
+- !private ["So30UIPasteConfigurationSupportingP", "resetPuzzleButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "scaleMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "scene"]
 - !private ["So30UIPasteConfigurationSupportingP", "shuffle"]
@@ -626,6 +664,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "updateLabels"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "GameScene"]
@@ -633,6 +672,7 @@ depends-member:
 - !private ["So11UIResponderC", "SKView"]
 - !private ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "Swap"]
+- ["So11UIResponderC", "UIButton"]
 - !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIInterfaceOrientationMask"]
 - ["So11UIResponderC", "UILabel"]
@@ -657,6 +697,7 @@ depends-member:
 - ["So11UIResponderC", "movesLeft"]
 - ["So11UIResponderC", "prefersStatusBarHidden"]
 - !private ["So11UIResponderC", "presentScene"]
+- ["So11UIResponderC", "resetPuzzleButton"]
 - !private ["So11UIResponderC", "scaleMode"]
 - ["So11UIResponderC", "scene"]
 - ["So11UIResponderC", "score"]
@@ -666,10 +707,12 @@ depends-member:
 - ["So11UIResponderC", "supportedInterfaceOrientations"]
 - !private ["So11UIResponderC", "swipeHandler"]
 - ["So11UIResponderC", "tapGestureRecognizer"]
+- ["So11UIResponderC", "tapResetButton"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "updateLabels"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillAppear"]
 - !private ["So30UIResponderStandardEditActionsP", "GameScene"]
 - !private ["So30UIResponderStandardEditActionsP", "Level"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
@@ -691,6 +734,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "movesLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "movesLeft"]
 - !private ["So30UIResponderStandardEditActionsP", "presentScene"]
+- !private ["So30UIResponderStandardEditActionsP", "resetPuzzleButton"]
 - !private ["So30UIResponderStandardEditActionsP", "scaleMode"]
 - !private ["So30UIResponderStandardEditActionsP", "scene"]
 - !private ["So30UIResponderStandardEditActionsP", "shuffle"]
@@ -699,7 +743,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "updateLabels"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "isHidden"]
 - !private ["So16UIStateRestoringP", "GameScene"]
 - !private ["So16UIStateRestoringP", "Level"]
 - !private ["So16UIStateRestoringP", "String"]
@@ -711,11 +757,13 @@ depends-member:
 - !private ["So16UIStateRestoringP", "level"]
 - !private ["So16UIStateRestoringP", "movesLabel"]
 - !private ["So16UIStateRestoringP", "movesLeft"]
+- !private ["So16UIStateRestoringP", "resetPuzzleButton"]
 - !private ["So16UIStateRestoringP", "scene"]
 - !private ["So16UIStateRestoringP", "shuffle"]
 - !private ["So16UIStateRestoringP", "updateLabels"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "viewWillAppear"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So18UITraitEnvironmentP", "GameScene"]
 - !private ["So18UITraitEnvironmentP", "Level"]
@@ -734,12 +782,14 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "movesLabel"]
 - !private ["So18UITraitEnvironmentP", "movesLeft"]
 - !private ["So18UITraitEnvironmentP", "presentScene"]
+- !private ["So18UITraitEnvironmentP", "resetPuzzleButton"]
 - !private ["So18UITraitEnvironmentP", "scene"]
 - !private ["So18UITraitEnvironmentP", "shuffle"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "updateLabels"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewWillAppear"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "bounds"]
@@ -754,6 +804,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "SKView"]
 - !private ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "Swap"]
+- ["So16UIViewControllerC", "UIButton"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", "UIInterfaceOrientationMask"]
 - ["So16UIViewControllerC", "UILabel"]
@@ -768,6 +819,7 @@ depends-member:
 - ["So16UIViewControllerC", "movesLabel"]
 - ["So16UIViewControllerC", "movesLeft"]
 - ["So16UIViewControllerC", "prefersStatusBarHidden"]
+- ["So16UIViewControllerC", "resetPuzzleButton"]
 - ["So16UIViewControllerC", "scene"]
 - ["So16UIViewControllerC", "score"]
 - ["So16UIViewControllerC", "shouldAutorotate"]
@@ -775,9 +827,11 @@ depends-member:
 - ["So16UIViewControllerC", "success"]
 - ["So16UIViewControllerC", "supportedInterfaceOrientations"]
 - ["So16UIViewControllerC", "tapGestureRecognizer"]
+- ["So16UIViewControllerC", "tapResetButton"]
 - ["So16UIViewControllerC", "updateLabels"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", ""]
 - ["s23_BidirectionalIndexableP", "init"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
@@ -818,6 +872,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "movesLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "movesLeft"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "presentScene"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resetPuzzleButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scaleMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scene"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shuffle"]
@@ -826,6 +881,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateLabels"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -884,12 +940,15 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So8UIButtonC"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
@@ -899,6 +958,7 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
 - !private "So6UIViewC"
@@ -951,4 +1011,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "5252d0ec8015da6e5f35b78e424236d4"
+interface-hash: "86860048d07cb097173e2de8c8d64759"
