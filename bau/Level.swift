@@ -116,16 +116,72 @@ class Level {
     }
     
     private func detectHorizontalMatches() {
-
+var shapeArray: [String] = []
         for row in 0..<NumRows {
             var column = 0
             while column < NumColumns {
-                var shapeColor = shapeAt(column: column, row: row)!.description.prefix(3)
-                var shapeType = shapeAt(column: column, row: row)!.description.suffix(3)
-                print("Color:",shapeColor,"Shape:",shapeType,"Row:",row+1,"Column",column+1)
+//                var shapeColor = shapeAt(column: column, row: row)!.description.prefix(3)
+//                var colorRow = [shapeColor,row+1] as [Any]
+//                var colorRows = [colorRow];
+//                colorRows.append(colorRow)
+//                print(colorRows)
+//                var shapeType = shapeAt(column: column, row: row)!.description.suffix(3)
+//                print("Color:",shapeColor,"Shape:",shapeType,"Row:",row+1,"Column",column+1)
+                shapeArray.append(shapeAt(column: column, row: row)!.description)
                 column += 1
             }
         }
+        detectCompletedBoard(currentState: shapeArray)
     }
+    
+    func detectCompletedBoard(currentState: Array<String>){
+        let completedStates:Array = [
+            ["bluSqu", "redSqu", "yelSqu", "bluTri", "redTri", "yelTri", "bluCir", "redCir", "yelCir"],
+            ["bluSqu", "yelSqu", "redSqu", "bluTri", "yelTri", "redTri", "bluCir", "yelCir", "redCir"],
+            ["yelSqu", "bluSqu", "redSqu", "yelTri", "bluTri", "redTri", "yelCir", "bluCir", "redCir"],
+            ["yelSqu", "redSqu", "bluSqu", "yelTri", "redTri", "bluTri", "yelCir", "redCir", "bluCir"],
+            ["redSqu", "yelSqu", "bluSqu", "redTri", "yelTri", "bluTri", "redCir", "yelCir", "bluCir"],
+            ["redSqu", "bluSqu", "yelSqu", "redTri", "bluTri", "yelTri", "redCir", "bluCir", "yelCir"],
+            ["bluSqu", "redSqu", "yelSqu", "bluCir", "redCir", "yelCir", "bluTri", "redTri", "yelTri"],
+            ["bluSqu", "yelSqu", "redSqu", "bluCir", "yelCir", "redCir", "bluTri", "yelTri", "redTri"],
+            ["yelSqu", "bluSqu", "redSqu", "yelCir", "bluCir", "redCir", "yelTri", "bluTri", "redTri"],
+            ["yelSqu", "redSqu", "bluSqu", "yelCir", "redCir", "bluCir", "yelTri", "redTri", "bluTri"],
+            ["redSqu", "yelSqu", "bluSqu", "redCir", "yelCir", "bluCir", "redTri", "yelTri", "bluTri"],
+            ["redSqu", "bluSqu", "yelSqu", "redCir", "bluCir", "yelCir", "redTri", "bluTri", "yelTri"],
+            ["bluTri", "redTri", "yelTri", "bluCir", "redCir", "yelCir", "bluSqu", "redSqu", "yelSqu"],
+            ["bluTri", "redTri", "yelTri", "bluSqu", "redSqu", "yelSqu", "bluCir", "redCir", "yelCir"],
+            ["yelTri", "bluTri", "redTri", "yelSqu", "bluSqu", "redSqu", "yelCir", "bluCir", "redCir"],
+            ["yelTri", "bluTri", "redTri", "yelCir", "bluCir", "redCir", "yelSqu", "bluSqu", "redSqu"],
+            ["redTri", "bluTri", "yelTri", "redSqu", "bluSqu", "yelSqu", "redCir", "bluCir", "yelCir"],
+            ["redTri", "bluTri", "yelTri", "redCir", "bluCir", "yelCir", "redSqu", "bluSqu", "yelSqu"],
+            ["yelTri", "yelSqu", "yelCir", "redTri", "redSqu", "redCir", "bluTri", "bluSqu", "bluCir"],
+            ["redTri", "redSqu", "redCir", "yelTri", "yelSqu", "yelCir", "bluTri", "bluSqu", "bluCir"],
+            ["redTri", "redSqu", "redCir", "bluTri", "bluSqu", "bluCir", "yelTri", "yelSqu", "yelCir"],
+            ["bluTri", "bluSqu", "bluCir", "redTri", "redSqu", "redCir", "yelTri", "yelSqu", "yelCir"],
+            ["bluTri", "bluSqu", "bluCir", "yelTri", "yelSqu", "yelCir", "redTri", "redSqu", "redCir"],
+            ["redTri", "redSqu", "redCir", "bluTri", "bluSqu", "bluCir", "yelTri", "yelSqu", "yelCir"],
+            ["redTri", "redSqu", "redCir", "yelTri", "yelSqu", "yelCir", "bluTri", "bluSqu", "bluCir"],
+            ["redTri", "redCir", "redSqu", "yelTri", "yelCir", "yelSqu", "bluTri", "bluCir", "bluSqu"],
+            ["redCir", "redTri", "redSqu", "yelCir", "yelTri", "yelSqu", "bluCir", "bluTri", "bluSqu"],
+            ["redCir", "redSqu", "redTri", "yelCir", "yelSqu", "yelTri", "bluCir", "bluSqu", "bluTri"],
+            ["redSqu", "redCir", "redTri", "yelSqu", "yelCir", "yelTri", "bluSqu", "bluCir", "bluTri"],
+            ["redSqu", "redTri", "redCir", "yelSqu", "yelTri", "yelCir", "bluSqu", "bluTri", "bluCir"],
+            ["yelSqu", "yelTri", "yelCir", "redSqu", "redTri", "redCir", "bluSqu", "bluTri", "bluCir"],
+            ["yelSqu", "yelCir", "yelTri", "redSqu", "redCir", "redTri", "bluSqu", "bluCir", "bluTri"],
+            ["yelTri", "yelSqu", "yelCir", "redTri", "redSqu", "redCir", "bluTri", "bluSqu", "bluCir"],
+            ["yelTri", "yelCir", "yelSqu", "redTri", "redCir", "redSqu", "bluTri", "bluCir", "bluSqu"],
+            ["bluTri", "bluCir", "bluSqu", "yelTri", "yelCir", "yelSqu", "redTri", "redCir", "redSqu"],
+            ["bluSqu", "bluTri", "bluCir", "yelSqu", "yelTri", "yelCir", "redSqu", "redTri", "redCir"],
+            ["bluSqu", "bluCir", "bluTri", "yelSqu", "yelCir", "yelTri", "redSqu", "redCir", "redTri"]
+]
+        
+        for completedState:Array in completedStates{
+            if currentState == completedState{
+                print("Completed")
+            }
+            
+        }
+    }
+    
   
 }
