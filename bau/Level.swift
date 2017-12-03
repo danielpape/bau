@@ -10,45 +10,29 @@ import Foundation
 
 let NumColumns = 3
 let NumRows = 3
-var maximumMoves = 0
 
 class Level {
+    var maximumMoves = 0
+    var startingShapes:Array = [0,0]
+    let tilesArray = [ [1, 1, 1,],
+                       [1, 1, 1,],
+                       [1, 1, 1,], ]
     
   var completed = false
-  // MARK: Properties
-  
-  // The 2D array that keeps track of where the Shapes are.
-  fileprivate var shapes = Array2D<Shape>(columns: 3, rows: 3)
-  
-  // The 2D array that contains the layout of the level.
-  fileprivate var tiles = Array2D<Tile>(columns: 3, rows: 3)
+    fileprivate var shapes = Array2D<Shape>(columns: 3, rows: 3)
+    fileprivate var tiles = Array2D<Tile>(columns: 3, rows: 3)
 
-  
-  // MARK: Initialization
-  
-  // Create a level by loading it from a file.
   init(filename: String) {
     guard let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename: filename) else { return }
-    // The dictionary contains an array named "tiles". This array contains
-    // one element for each row of the level. Each of those row elements in
-    // turn is also an array describing the columns in that row. If a column
-    // is 1, it means there is a tile at that location, 0 means there is not.
-    guard let tilesArray = dictionary["tiles"] as? [[Int]] else { return }
+//    guard let tilesArray = dictionary["tiles"] as? [[Int]] else { return }
     
     maximumMoves = dictionary["moves"] as! Int
+    startingShapes = dictionary["shapes"] as! Array
     
-    // Loop through the rows...
     for (row, rowArray) in tilesArray.enumerated() {
-      // Note: In Sprite Kit (0,0) is at the bottom of the screen,
-      // so we need to read this file upside down.
       let tileRow = NumRows - row - 1
-      
-      // Loop through the columns in the current r
-      for (column, value) in rowArray.enumerated() {
-        // If the value is 1, create a tile object.
-        if value == 1 {
+        for (column, value) in rowArray.enumerated() {
           tiles[column, tileRow] = Tile()
-        }
       }
     }
   }
@@ -71,7 +55,7 @@ class Level {
       for column in 0..<3 {
         if tiles[column, row] != nil {
             
-          let shapeType = shapeArray[arrayPosition]
+          let shapeType = startingShapes[arrayPosition]
             arrayPosition = arrayPosition + 1
           
             let shape = Shape(column: column, row: row, shapeType: ShapeType(rawValue: shapeType)!)

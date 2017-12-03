@@ -59,7 +59,7 @@ class GameViewController: UIViewController {
   }
   
   func beginGame() {
-    movesLeft = 5
+    movesLeft = level.maximumMoves
     updateLabels()
     shuffle()
   }
