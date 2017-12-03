@@ -10,9 +10,11 @@ import Foundation
 
 let NumColumns = 3
 let NumRows = 3
+var maximumMoves = 0
 
 class Level {
-  
+    
+  var completed = false
   // MARK: Properties
   
   // The 2D array that keeps track of where the Shapes are.
@@ -32,6 +34,8 @@ class Level {
     // turn is also an array describing the columns in that row. If a column
     // is 1, it means there is a tile at that location, 0 means there is not.
     guard let tilesArray = dictionary["tiles"] as? [[Int]] else { return }
+    
+    maximumMoves = dictionary["moves"] as! Int
     
     // Loop through the rows...
     for (row, rowArray) in tilesArray.enumerated() {
@@ -115,18 +119,11 @@ class Level {
         
     }
     
-    private func detectHorizontalMatches() {
+    func detectHorizontalMatches() {
 var shapeArray: [String] = []
         for row in 0..<NumRows {
             var column = 0
             while column < NumColumns {
-//                var shapeColor = shapeAt(column: column, row: row)!.description.prefix(3)
-//                var colorRow = [shapeColor,row+1] as [Any]
-//                var colorRows = [colorRow];
-//                colorRows.append(colorRow)
-//                print(colorRows)
-//                var shapeType = shapeAt(column: column, row: row)!.description.suffix(3)
-//                print("Color:",shapeColor,"Shape:",shapeType,"Row:",row+1,"Column",column+1)
                 shapeArray.append(shapeAt(column: column, row: row)!.description)
                 column += 1
             }
@@ -177,7 +174,7 @@ var shapeArray: [String] = []
         
         for completedState:Array in completedStates{
             if currentState == completedState{
-                print("Completed")
+                completed = true
             }
             
         }

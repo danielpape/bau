@@ -6,13 +6,19 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="CookieCrunch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="bau" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
@@ -20,11 +26,67 @@
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6k-2q-gln">
+                                <rect key="frame" x="81" y="474" width="229" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qln-LT-YLo">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="W7f-yg-Nxz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves Left: 4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsp-mb-LPh">
+                                        <rect key="frame" x="108" y="0.0" width="121" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121" id="iau-s6-sNu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Qln-LT-YLo" firstAttribute="leading" secondItem="g6k-2q-gln" secondAttribute="leading" id="3Xr-tF-JYs"/>
+                                    <constraint firstItem="Gsp-mb-LPh" firstAttribute="top" secondItem="g6k-2q-gln" secondAttribute="top" id="9pi-fU-KRF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gsp-mb-LPh" secondAttribute="trailing" id="AL7-uo-g75"/>
+                                    <constraint firstItem="Qln-LT-YLo" firstAttribute="top" secondItem="g6k-2q-gln" secondAttribute="top" id="OyA-AT-glM"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gsp-mb-LPh" secondAttribute="bottom" constant="6" id="RCe-mb-oGA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qln-LT-YLo" secondAttribute="bottom" constant="6" id="SFg-2Q-hMb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-ZZ-MBd">
+                                <rect key="frame" x="16" y="181" width="343" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="lYm-4U-n8U"/>
+                                    <constraint firstAttribute="width" constant="343" id="rBo-aW-6Mb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g6k-2q-gln" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="65" id="EVi-Vq-pnb"/>
+                            <constraint firstItem="4hI-ZZ-MBd" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="S2v-LH-bRm"/>
+                            <constraint firstItem="4hI-ZZ-MBd" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="161" id="egM-mp-ut0"/>
+                            <constraint firstItem="g6k-2q-gln" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" constant="8" id="xP0-fc-pFE"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="g6k-2q-gln" secondAttribute="bottom" constant="167" id="xUt-rx-dWu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameOverLabel" destination="4hI-ZZ-MBd" id="BxR-ap-unI"/>
+                        <outlet property="movesLabel" destination="Gsp-mb-LPh" id="4Dg-86-IZp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>
