@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3750D1031FD49A9B0022253D /* Levels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3750D1021FD49A9B0022253D /* Levels.storyboard */; };
 		3750D1051FD49AE50022253D /* LevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3750D1041FD49AE50022253D /* LevelsViewController.swift */; };
+		37627E991FD6822100A6371E /* LevelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37627E981FD6822100A6371E /* LevelTableViewCell.swift */; };
 		37D4D0801FD2D75B00DC3AC9 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 37D4D07F1FD2D75B00DC3AC9 /* Sprites.atlas */; };
 		37D4D0821FD2DCFE00DC3AC9 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4D0811FD2DCFE00DC3AC9 /* Swap.swift */; };
 		9B528B3B1CBE41770038DCB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B528B3A1CBE41770038DCB0 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		3750D1021FD49A9B0022253D /* Levels.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Levels.storyboard; sourceTree = "<group>"; };
 		3750D1041FD49AE50022253D /* LevelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewController.swift; sourceTree = "<group>"; };
+		37627E981FD6822100A6371E /* LevelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelTableViewCell.swift; sourceTree = "<group>"; };
 		37D4D07F1FD2D75B00DC3AC9 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		37D4D0811FD2DCFE00DC3AC9 /* Swap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 		9B528B371CBE41770038DCB0 /* bau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bau.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 				9B528B471CBE41780038DCB0 /* LaunchScreen.storyboard */,
 				9B528B421CBE41780038DCB0 /* Main.storyboard */,
 				3750D1021FD49A9B0022253D /* Levels.storyboard */,
+				37627E981FD6822100A6371E /* LevelTableViewCell.swift */,
 				3750D1041FD49AE50022253D /* LevelsViewController.swift */,
 			);
 			name = Misc;
@@ -243,6 +246,7 @@
 				9B528B551CBE4FD00038DCB0 /* Shape.swift in Sources */,
 				9B528B6C1CBE5B2F0038DCB0 /* Extensions.swift in Sources */,
 				9B528B6A1CBE597C0038DCB0 /* Tile.swift in Sources */,
+				37627E991FD6822100A6371E /* LevelTableViewCell.swift in Sources */,
 				9B528B411CBE41780038DCB0 /* GameViewController.swift in Sources */,
 				9B528B3B1CBE41770038DCB0 /* AppDelegate.swift in Sources */,
 				9B528B581CBE52310038DCB0 /* Array2D.swift in Sources */,

@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
   
   var scene: GameScene!
   var level: Level!
+    var LevelNumber = 1
     var movesLeft = 0
     var score = 0
     var tapGestureRecognizer: UITapGestureRecognizer!
@@ -20,6 +21,7 @@ class GameViewController: UIViewController {
     var gameOverMessage = "Game Over"
     
     @IBOutlet weak var movesLabel: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var gameOverLabel: UILabel!
     @IBOutlet weak var resetPuzzleButton: UIButton!
     
@@ -38,9 +40,11 @@ class GameViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+        
     let skView = view as! SKView
     skView.isMultipleTouchEnabled = false
+    
+    print(LevelNumber)
     
     gameOverLabel.isHidden = true
     resetPuzzleButton.isHidden = true
@@ -50,9 +54,12 @@ class GameViewController: UIViewController {
     scene = GameScene(size: skView.bounds.size)
     scene.scaleMode = .aspectFill
     
-    level = Level(filename: "Level_1")
+    var fileName = "Level_\(LevelNumber)"
+    
+    level = Level(filename: fileName)
     scene.level = level
     
+    print(fileName)
     scene.swipeHandler = handleSwipe
     
     skView.presentScene(scene)
@@ -72,7 +79,9 @@ class GameViewController: UIViewController {
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .aspectFill
         
-        level = Level(filename: "Level_1")
+        var fileName = "Level_\(LevelNumber)"
+        
+        level = Level(filename: fileName)
         scene.level = level
         
         scene.swipeHandler = handleSwipe
@@ -126,6 +135,7 @@ class GameViewController: UIViewController {
   
     func updateLabels() {
         movesLabel.text = String(format: "Moves left: "+"%ld", movesLeft)
+        levelLabel.text = String(format: "Level "+"%ld", LevelNumber)
     }
     
     

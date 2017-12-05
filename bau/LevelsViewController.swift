@@ -10,7 +10,7 @@ import UIKit
 
 class LevelsViewController: UITableViewController {
     
-    var levels:Array = ["Level_1","Level_2","Level 3"]
+    var levels:Array = ["1","2","3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +41,22 @@ class LevelsViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let cell:LevelTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LevelTableViewCell
 
-        cell.textLabel?.text = levels[indexPath.row ]
+        cell.levelNameLabel?.text = "Level "+levels[indexPath.row ]
 
         return cell
+    }
+    
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+     //  let selectedLevel = Int(levels[indexPath.row])!
+
+    //    let destinationVC = GameViewController()
+    //    destinationVC.LevelNumber = selectedLevel
+     //   print(Int(selectedLevel))
+        self.performSegue(withIdentifier: "segue", sender: self)
     }
  
 
@@ -84,14 +95,22 @@ class LevelsViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)   {
+        
+        if (segue.identifier == "segue") {
+            
+            //prepare for segue to the details view controller
+            
+            let detailsVC = segue.destination as!  GameViewController
+            
+            let indexPath = self.tableView.indexPathForSelectedRow?.row
+            detailsVC.LevelNumber = indexPath!+1
+            
+        }
     }
-    */
+ 
 
 }

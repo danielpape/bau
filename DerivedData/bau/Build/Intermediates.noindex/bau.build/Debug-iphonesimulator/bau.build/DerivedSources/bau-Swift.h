@@ -234,12 +234,14 @@ SWIFT_CLASS("_TtC3bau9GameScene")
 SWIFT_CLASS("_TtC3bau18GameViewController")
 @interface GameViewController : UIViewController
 @property (nonatomic, strong) GameScene * _Null_unspecified scene;
+@property (nonatomic) NSInteger LevelNumber;
 @property (nonatomic) NSInteger movesLeft;
 @property (nonatomic) NSInteger score;
 @property (nonatomic, strong) UITapGestureRecognizer * _Null_unspecified tapGestureRecognizer;
 @property (nonatomic) BOOL completed;
 @property (nonatomic, copy) NSString * _Nonnull gameOverMessage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified movesLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gameOverLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified resetPuzzleButton;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
@@ -256,8 +258,18 @@ SWIFT_CLASS("_TtC3bau18GameViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC3bau18LevelTableViewCell")
+@interface LevelTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelNameLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITableView;
-@class UITableViewCell;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @interface LevelsViewController : UITableViewController
@@ -267,6 +279,8 @@ SWIFT_CLASS("_TtC3bau20LevelsViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

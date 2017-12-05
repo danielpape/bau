@@ -3,7 +3,7 @@
 <plist version="1.0">
 <array>
 	<string>UIKit</string>
-	<string>Foundation</string>
 	<string>SpriteKit</string>
+	<string>Foundation</string>
 </array>
 </plist>
