@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
   var scene: GameScene!
   var level: Level!
     var LevelNumber = 1
+    var teacherName = 0
     var movesLeft = 0
     var score = 0
     var tapGestureRecognizer: UITapGestureRecognizer!
@@ -58,7 +59,7 @@ class GameViewController: UIViewController {
     scene = GameScene(size: skView.bounds.size)
     scene.scaleMode = .aspectFill
     
-    var fileName = "Level_\(LevelNumber)"
+    let fileName = "Level_\(teacherName)_\(LevelNumber)"
     
     level = Level(filename: fileName)
     scene.level = level
@@ -67,9 +68,7 @@ class GameViewController: UIViewController {
     scene.swipeHandler = handleSwipe
     
     skView.presentScene(scene)
-    
     completedLevels = defaults.object(forKey: "completedLevels") as! Array<Int>
-    
     beginGame()
   }
     
@@ -86,7 +85,7 @@ class GameViewController: UIViewController {
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .aspectFill
         
-        var fileName = "Level_\(LevelNumber)"
+        let fileName = "Level_\(teacherName)_\(LevelNumber)"
         
         level = Level(filename: fileName)
         scene.level = level

@@ -39,6 +39,7 @@ depends-top-level:
 - "Swap"
 - "Tile"
 - !private "assert"
+- !private "print"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "enumerated"]
@@ -151,6 +152,7 @@ depends-member:
 - ["3bau5LevelC", "init"]
 - ["3bau5LevelC", "maximumMoves"]
 - ["3bau5LevelC", "performSwap"]
+- !private ["3bau5LevelC", "print"]
 - ["3bau5LevelC", "shapeAt"]
 - !private ["3bau5LevelC", "shapes"]
 - ["3bau5LevelC", "shuffle"]

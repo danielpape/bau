@@ -1,15 +1,16 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "fc520bb3cc1050435fc12b74daf9bba7"
-build_time: [1512588840, 844313000]
+build_time: [1512595433, 240117000]
 inputs:
-  "/Users/dan/Developer/iOS/bau/bau/Level.swift": [1512330577, 0]
-  "/Users/dan/Developer/iOS/bau/bau/LevelsViewController.swift": [1512588840, 0]
+  "/Users/dan/Developer/iOS/bau/bau/Level.swift": [1512595346, 0]
+  "/Users/dan/Developer/iOS/bau/bau/LevelsViewController.swift": [1512594772, 0]
   "/Users/dan/Developer/iOS/bau/bau/GameScene.swift": [1512220234, 0]
   "/Users/dan/Developer/iOS/bau/bau/Shape.swift": [1512248041, 0]
+  "/Users/dan/Developer/iOS/bau/bau/ClassesTableViewController.swift": [1512594722, 0]
   "/Users/dan/Developer/iOS/bau/bau/Extensions.swift": [1512217490, 0]
   "/Users/dan/Developer/iOS/bau/bau/Tile.swift": [1512217490, 0]
   "/Users/dan/Developer/iOS/bau/bau/LevelTableViewCell.swift": [1512459877, 0]
-  "/Users/dan/Developer/iOS/bau/bau/GameViewController.swift": [1512588689, 0]
+  "/Users/dan/Developer/iOS/bau/bau/GameViewController.swift": [1512595433, 0]
   "/Users/dan/Developer/iOS/bau/bau/AppDelegate.swift": [1512217490, 0]
   "/Users/dan/Developer/iOS/bau/bau/Array2D.swift": [1512217490, 0]
   "/Users/dan/Developer/iOS/bau/bau/Swap.swift": [1512312181, 0]

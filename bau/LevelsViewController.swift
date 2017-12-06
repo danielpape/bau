@@ -12,11 +12,10 @@ class LevelsViewController: UITableViewController {
     
     var levels:Array = ["1","2","3","4","5","6","7","8","9","10"]
     var defaults = UserDefaults.standard
-    
+    var teacher = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,6 +25,7 @@ class LevelsViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
+        print("teacher is \(teacher)")
         
     }
 
@@ -64,11 +64,6 @@ class LevelsViewController: UITableViewController {
     
    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-     //  let selectedLevel = Int(levels[indexPath.row])!
-
-    //    let destinationVC = GameViewController()
-    //    destinationVC.LevelNumber = selectedLevel
-     //   print(Int(selectedLevel))
         self.performSegue(withIdentifier: "segue", sender: self)
     }
  
@@ -120,6 +115,7 @@ class LevelsViewController: UITableViewController {
             let detailsVC = segue.destination as!  GameViewController
             
             let indexPath = self.tableView.indexPathForSelectedRow?.row
+            detailsVC.teacherName = teacher
             detailsVC.LevelNumber = indexPath!+1
             
         }

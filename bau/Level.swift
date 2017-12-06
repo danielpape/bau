@@ -25,7 +25,7 @@ class Level {
   init(filename: String) {
     guard let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename: filename) else { return }
 //    guard let tilesArray = dictionary["tiles"] as? [[Int]] else { return }
-    
+    print(filename)
     maximumMoves = dictionary["moves"] as! Int
     startingShapes = dictionary["shapes"] as! Array
     

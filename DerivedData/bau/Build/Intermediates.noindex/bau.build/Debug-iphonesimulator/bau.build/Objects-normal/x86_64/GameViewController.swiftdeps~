@@ -28,6 +28,7 @@ provides-dynamic-lookup:
 - "tapGestureRecognizer"
 - "tapNextButton"
 - "tapResetButton"
+- "teacherName"
 - "updateLabels"
 - "viewDidLoad"
 - "viewWillAppear"
@@ -57,6 +58,7 @@ depends-top-level:
 - "UILabel"
 - "UITapGestureRecognizer"
 - "UIViewController"
+- !private "UnicodeScalarType"
 - "UserDefaults"
 - !private "print"
 depends-member:
@@ -112,6 +114,7 @@ depends-member:
 - !private ["s7CVarArgP", "shuffle"]
 - ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "swipeHandler"]
+- !private ["s7CVarArgP", "teacherName"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "updateLabels"]
 - !private ["s7CVarArgP", "view"]
@@ -162,6 +165,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "swipeHandler"]
+- !private ["s28CustomDebugStringConvertibleP", "teacherName"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "updateLabels"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
@@ -216,6 +220,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shuffle"]
 - ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "swipeHandler"]
+- !private ["s23CustomStringConvertibleP", "teacherName"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "updateLabels"]
 - !private ["s23CustomStringConvertibleP", "view"]
@@ -275,6 +280,7 @@ depends-member:
 - !private ["s9EquatableP", "size"]
 - ["s9EquatableP", "standard"]
 - !private ["s9EquatableP", "swipeHandler"]
+- !private ["s9EquatableP", "teacherName"]
 - !private ["s9EquatableP", "text"]
 - !private ["s9EquatableP", "updateLabels"]
 - !private ["s9EquatableP", "view"]
@@ -341,6 +347,7 @@ depends-member:
 - ["3bau18GameViewControllerC", "tapGestureRecognizer"]
 - ["3bau18GameViewControllerC", "tapNextButton"]
 - ["3bau18GameViewControllerC", "tapResetButton"]
+- ["3bau18GameViewControllerC", "teacherName"]
 - ["3bau18GameViewControllerC", "updateLabels"]
 - !private ["3bau18GameViewControllerC", "view"]
 - ["3bau18GameViewControllerC", "viewDidLoad"]
@@ -385,6 +392,7 @@ depends-member:
 - !private ["s8HashableP", "shuffle"]
 - ["s8HashableP", "standard"]
 - !private ["s8HashableP", "swipeHandler"]
+- !private ["s8HashableP", "teacherName"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "updateLabels"]
 - !private ["s8HashableP", "view"]
@@ -436,6 +444,7 @@ depends-member:
 - !private ["So8NSCodingP", "setTitle"]
 - !private ["So8NSCodingP", "shuffle"]
 - !private ["So8NSCodingP", "swipeHandler"]
+- !private ["So8NSCodingP", "teacherName"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "updateLabels"]
 - !private ["So8NSCodingP", "view"]
@@ -475,6 +484,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "resetPuzzleButton"]
 - !private ["So26NSExtensionRequestHandlingP", "scene"]
 - !private ["So26NSExtensionRequestHandlingP", "shuffle"]
+- !private ["So26NSExtensionRequestHandlingP", "teacherName"]
 - !private ["So26NSExtensionRequestHandlingP", "updateLabels"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
@@ -542,6 +552,7 @@ depends-member:
 - ["So8NSObjectC", "tapGestureRecognizer"]
 - ["So8NSObjectC", "tapNextButton"]
 - ["So8NSObjectC", "tapResetButton"]
+- ["So8NSObjectC", "teacherName"]
 - !private ["So8NSObjectC", "text"]
 - ["So8NSObjectC", "updateLabels"]
 - !private ["So8NSObjectC", "view"]
@@ -586,6 +597,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "shuffle"]
 - ["So16NSObjectProtocolP", "standard"]
 - !private ["So16NSObjectProtocolP", "swipeHandler"]
+- !private ["So16NSObjectProtocolP", "teacherName"]
 - !private ["So16NSObjectProtocolP", "text"]
 - !private ["So16NSObjectProtocolP", "updateLabels"]
 - !private ["So16NSObjectProtocolP", "view"]
@@ -696,6 +708,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "scene"]
 - !private ["So21UIAppearanceContainerP", "setTitle"]
 - !private ["So21UIAppearanceContainerP", "shuffle"]
+- !private ["So21UIAppearanceContainerP", "teacherName"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "updateLabels"]
 - !private ["So21UIAppearanceContainerP", "view"]
@@ -727,6 +740,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "resetPuzzleButton"]
 - !private ["So18UIContentContainerP", "scene"]
 - !private ["So18UIContentContainerP", "shuffle"]
+- !private ["So18UIContentContainerP", "teacherName"]
 - !private ["So18UIContentContainerP", "updateLabels"]
 - !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
@@ -788,6 +802,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "setTitle"]
 - !private ["So18UIFocusEnvironmentP", "shuffle"]
 - !private ["So18UIFocusEnvironmentP", "swipeHandler"]
+- !private ["So18UIFocusEnvironmentP", "teacherName"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "updateLabels"]
 - !private ["So18UIFocusEnvironmentP", "view"]
@@ -849,6 +864,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "shuffle"]
 - !private ["So30UIPasteConfigurationSupportingP", "swipeHandler"]
+- !private ["So30UIPasteConfigurationSupportingP", "teacherName"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "updateLabels"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
@@ -909,6 +925,7 @@ depends-member:
 - ["So11UIResponderC", "tapGestureRecognizer"]
 - ["So11UIResponderC", "tapNextButton"]
 - ["So11UIResponderC", "tapResetButton"]
+- ["So11UIResponderC", "teacherName"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "updateLabels"]
 - !private ["So11UIResponderC", "view"]
@@ -949,6 +966,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "shuffle"]
 - !private ["So30UIResponderStandardEditActionsP", "swipeHandler"]
+- !private ["So30UIResponderStandardEditActionsP", "teacherName"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "updateLabels"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
@@ -979,6 +997,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "resetPuzzleButton"]
 - !private ["So16UIStateRestoringP", "scene"]
 - !private ["So16UIStateRestoringP", "shuffle"]
+- !private ["So16UIStateRestoringP", "teacherName"]
 - !private ["So16UIStateRestoringP", "updateLabels"]
 - !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
@@ -1013,6 +1032,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "scene"]
 - !private ["So18UITraitEnvironmentP", "setTitle"]
 - !private ["So18UITraitEnvironmentP", "shuffle"]
+- !private ["So18UITraitEnvironmentP", "teacherName"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "updateLabels"]
 - !private ["So18UITraitEnvironmentP", "view"]
@@ -1068,6 +1088,7 @@ depends-member:
 - ["So16UIViewControllerC", "tapGestureRecognizer"]
 - ["So16UIViewControllerC", "tapNextButton"]
 - ["So16UIViewControllerC", "tapResetButton"]
+- ["So16UIViewControllerC", "teacherName"]
 - ["So16UIViewControllerC", "updateLabels"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
@@ -1138,6 +1159,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shuffle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "swipeHandler"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "teacherName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "updateLabels"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
@@ -1285,4 +1307,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "0c187941f3657787994c0ed25a79c499"
+interface-hash: "0dcc1bf11561d2fc182fc004593b37a2"
