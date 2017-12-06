@@ -19,6 +19,8 @@ class GameViewController: UIViewController {
     var tapGestureRecognizer: UITapGestureRecognizer!
     var completed = false
     var gameOverMessage = "Game Over"
+    var completedLevels:Array<Int> = [0]
+    let defaults = UserDefaults.standard
     
     @IBOutlet weak var movesLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
@@ -66,6 +68,8 @@ class GameViewController: UIViewController {
     
     skView.presentScene(scene)
     
+    completedLevels = defaults.object(forKey: "completedLevels") as! Array<Int>
+    
     beginGame()
   }
     
@@ -90,6 +94,8 @@ class GameViewController: UIViewController {
         scene.swipeHandler = handleSwipe
         
         skView.presentScene(scene)
+        
+        completedLevels = defaults.object(forKey: "completedLevels") as! Array<Int>
         
         beginGame()
     }
@@ -124,6 +130,9 @@ class GameViewController: UIViewController {
             resetPuzzleButton.isHidden = true
             nextPuzzleButton.isHidden = false
             movesLabel.isHidden = true
+            completedLevels.append(LevelNumber)
+            defaults.set(completedLevels, forKey: "completedLevels")
+            print(defaults.object(forKey: "completedLevels")!)
         }
         
         scene.animate(swap) {

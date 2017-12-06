@@ -227,6 +227,7 @@ SWIFT_CLASS("_TtC3bau9GameScene")
 @end
 
 @class UITapGestureRecognizer;
+@class NSUserDefaults;
 @class UILabel;
 @class UIButton;
 @class NSBundle;
@@ -240,6 +241,8 @@ SWIFT_CLASS("_TtC3bau18GameViewController")
 @property (nonatomic, strong) UITapGestureRecognizer * _Null_unspecified tapGestureRecognizer;
 @property (nonatomic) BOOL completed;
 @property (nonatomic, copy) NSString * _Nonnull gameOverMessage;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull completedLevels;
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified movesLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gameOverLabel;
@@ -276,7 +279,9 @@ SWIFT_CLASS("_TtC3bau18LevelTableViewCell")
 SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @interface LevelsViewController : UITableViewController
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull levels;
+@property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

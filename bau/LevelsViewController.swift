@@ -11,6 +11,8 @@ import UIKit
 class LevelsViewController: UITableViewController {
     
     var levels:Array = ["1","2","3","4","5","6","7","8","9","10"]
+    var defaults = UserDefaults.standard
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,11 @@ class LevelsViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +50,13 @@ class LevelsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:LevelTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LevelTableViewCell
-
+        
+        var completedLevelsArray = defaults.object(forKey: "completedLevels") as! Array<Int>
+        
+        if completedLevelsArray.contains(indexPath.row+1){
+            cell.levelNameLabel.textColor = UIColor.lightGray
+        }
+        
         cell.levelNameLabel?.text = "Level "+levels[indexPath.row ]
 
         return cell
