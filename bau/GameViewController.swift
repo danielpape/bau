@@ -113,7 +113,12 @@ class GameViewController: UIViewController {
         
         if(level.completed == true){
             gameOverLabel.text = "Complete"
+            resetPuzzleButton.setTitle("Next Puzzle", for: UIControlState.normal)
             gameOverLabel.isHidden = false
+            scene.gameLayer.alpha = 0.2
+            scene.isUserInteractionEnabled = false
+            resetPuzzleButton.isHidden = false
+            movesLabel.isHidden = true
         }
         
         scene.animate(swap) {
