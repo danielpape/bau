@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -100,24 +101,38 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKO-Z7-zsO">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKO-Z7-zsO">
                                         <rect key="frame" x="129" y="-5" width="100" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                         <state key="normal" title="Reset puzzle"/>
                                         <connections>
                                             <action selector="tapResetButton:" destination="F19-63-2P2" eventType="touchUpInside" id="LuH-B4-reY"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO1-dx-FEH">
+                                        <rect key="frame" x="129" y="-5" width="100" height="30"/>
+                                        <state key="normal" title="Next Puzzle"/>
+                                        <connections>
+                                            <action selector="tapNextButton:" destination="F19-63-2P2" eventType="touchUpInside" id="IHQ-Cf-sIU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="yW7-XX-mdR" secondAttribute="trailing" id="9Ay-aW-UqH"/>
+                                    <constraint firstItem="qKO-Z7-zsO" firstAttribute="leading" secondItem="XO1-dx-FEH" secondAttribute="leading" id="9vg-cb-h67"/>
+                                    <constraint firstItem="qKO-Z7-zsO" firstAttribute="baseline" secondItem="yW7-XX-mdR" secondAttribute="firstBaseline" id="AGs-XB-itb"/>
                                     <constraint firstItem="HAe-ip-4Le" firstAttribute="top" secondItem="Ywf-QO-JJo" secondAttribute="top" id="Ad3-Hx-N80"/>
+                                    <constraint firstItem="XO1-dx-FEH" firstAttribute="baseline" secondItem="qKO-Z7-zsO" secondAttribute="firstBaseline" id="Jsl-55-8qd"/>
+                                    <constraint firstItem="XO1-dx-FEH" firstAttribute="baseline" secondItem="qKO-Z7-zsO" secondAttribute="baseline" id="L8b-cf-0YJ"/>
                                     <constraint firstItem="yW7-XX-mdR" firstAttribute="top" secondItem="Ywf-QO-JJo" secondAttribute="top" id="OJx-9f-VEh"/>
+                                    <constraint firstItem="qKO-Z7-zsO" firstAttribute="top" secondItem="Ywf-QO-JJo" secondAttribute="top" constant="-5" id="aK0-uL-L8L"/>
                                     <constraint firstAttribute="bottom" secondItem="HAe-ip-4Le" secondAttribute="bottom" constant="6" id="c4a-GI-zHx"/>
+                                    <constraint firstItem="XO1-dx-FEH" firstAttribute="trailing" secondItem="yW7-XX-mdR" secondAttribute="trailing" id="hCv-Gy-dbK"/>
                                     <constraint firstAttribute="bottom" secondItem="yW7-XX-mdR" secondAttribute="bottom" constant="6" id="kXv-zI-MFL"/>
+                                    <constraint firstItem="qKO-Z7-zsO" firstAttribute="leading" secondItem="HAe-ip-4Le" secondAttribute="trailing" constant="8" symbolic="YES" id="nOq-A5-uHi"/>
                                     <constraint firstItem="HAe-ip-4Le" firstAttribute="leading" secondItem="Ywf-QO-JJo" secondAttribute="leading" id="qbT-HL-9vs"/>
+                                    <constraint firstItem="qKO-Z7-zsO" firstAttribute="trailing" secondItem="XO1-dx-FEH" secondAttribute="trailing" id="xfo-Je-idu"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haE-e5-waf">
@@ -145,12 +160,13 @@
                         <outlet property="gameOverLabel" destination="haE-e5-waf" id="Q7n-tT-U9M"/>
                         <outlet property="levelLabel" destination="HAe-ip-4Le" id="A6Z-W1-GO8"/>
                         <outlet property="movesLabel" destination="yW7-XX-mdR" id="kNq-Pm-cDm"/>
+                        <outlet property="nextPuzzleButton" destination="XO1-dx-FEH" id="SJN-Vb-h6O"/>
                         <outlet property="resetPuzzleButton" destination="qKO-Z7-zsO" id="cn5-RA-G7C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7d6-gX-iPa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2249" y="-461"/>
+            <point key="canvasLocation" x="2248.8000000000002" y="-461.01949025487261"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tgo-iC-gqp">

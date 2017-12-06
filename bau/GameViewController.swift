@@ -24,6 +24,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var gameOverLabel: UILabel!
     @IBOutlet weak var resetPuzzleButton: UIButton!
+    @IBOutlet weak var nextPuzzleButton: UIButton!
     
   
   override var prefersStatusBarHidden: Bool {
@@ -48,6 +49,7 @@ class GameViewController: UIViewController {
     
     gameOverLabel.isHidden = true
     resetPuzzleButton.isHidden = true
+    nextPuzzleButton.isHidden = true
     
     self.view?.backgroundColor = UIColor.white
 
@@ -73,6 +75,7 @@ class GameViewController: UIViewController {
         
         gameOverLabel.isHidden = true
         resetPuzzleButton.isHidden = true
+        nextPuzzleButton.isHidden = true
         
         self.view?.backgroundColor = UIColor.white
         
@@ -95,6 +98,7 @@ class GameViewController: UIViewController {
     movesLeft = level.maximumMoves
     movesLabel.isHidden = false
     resetPuzzleButton.isHidden = true
+    nextPuzzleButton.isHidden = true
     updateLabels()
     scene.gameLayer.alpha = 1
     scene.isUserInteractionEnabled = true
@@ -117,7 +121,8 @@ class GameViewController: UIViewController {
             gameOverLabel.isHidden = false
             scene.gameLayer.alpha = 0.2
             scene.isUserInteractionEnabled = false
-            resetPuzzleButton.isHidden = false
+            resetPuzzleButton.isHidden = true
+            nextPuzzleButton.isHidden = false
             movesLabel.isHidden = true
         }
         
@@ -148,6 +153,12 @@ class GameViewController: UIViewController {
         movesLabel.text = "Completed"
     }
     @IBAction func tapResetButton(_ sender: Any) {
+        viewWillAppear(true)
+    }
+    
+    @IBAction func tapNextButton(_ sender: Any) {
+        print("Next button tapped")
+        LevelNumber = LevelNumber+1
         viewWillAppear(true)
     }
     

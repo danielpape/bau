@@ -244,6 +244,7 @@ SWIFT_CLASS("_TtC3bau18GameViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gameOverLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified resetPuzzleButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextPuzzleButton;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
@@ -254,6 +255,7 @@ SWIFT_CLASS("_TtC3bau18GameViewController")
 - (void)updateLabels;
 - (void)success;
 - (IBAction)tapResetButton:(id _Nonnull)sender;
+- (IBAction)tapNextButton:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

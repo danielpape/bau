@@ -10,7 +10,7 @@ import UIKit
 
 class LevelsViewController: UITableViewController {
     
-    var levels:Array = ["1","2","3"]
+    var levels:Array = ["1","2","3","4","5","6","7","8","9","10"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
