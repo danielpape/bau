@@ -202,6 +202,7 @@ SWIFT_CLASS("_TtC3bau11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSUserDefaults;
 @class UITableView;
 @class UITableViewCell;
 @class UIStoryboardSegue;
@@ -211,6 +212,7 @@ SWIFT_CLASS("_TtC3bau11AppDelegate")
 SWIFT_CLASS("_TtC3bau26ClassesTableViewController")
 @interface ClassesTableViewController : UITableViewController
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull teachersArray;
+@property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -247,7 +249,6 @@ SWIFT_CLASS("_TtC3bau9GameScene")
 @end
 
 @class UITapGestureRecognizer;
-@class NSUserDefaults;
 @class UILabel;
 @class UIButton;
 

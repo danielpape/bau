@@ -11,6 +11,7 @@ import UIKit
 class ClassesTableViewController: UITableViewController {
     
     var teachersArray = ["Gropius","Kandinsky","Breuer"]
+    var defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,15 @@ class ClassesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
+        var completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
+        for teacher in 1...3{
+            for puzzle in 1...10{
+                if (!completedLevels.contains("Level_\(teacher)_\(puzzle)")){
+                    cell.textLabel?.textColor = UIColor.lightGray
+            }
+        }
+        }
+        
 
         cell.textLabel?.text = teachersArray[indexPath.row]
         return cell
