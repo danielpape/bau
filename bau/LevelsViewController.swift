@@ -55,7 +55,8 @@ class LevelsViewController: UITableViewController {
         
         var fileName = "Level_\(teacher)_\(levels[indexPath.row ])"
         if(completedLevels.contains(fileName)){
-            cell.levelNameLabel?.textColor =  UIColor.lightGray
+            cell.accessoryType = .checkmark
+            cell.levelNameLabel.textColor = UIColor.lightGray
         }
         cell.levelNameLabel?.text = "Level "+levels[indexPath.row ]
         return cell
