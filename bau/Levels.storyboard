@@ -26,9 +26,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJD-bs-WWT">
-                                <rect key="frame" x="165" y="318" width="44" height="30"/>
+                                <rect key="frame" x="94" y="318" width="187" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Levels"/>
+                                <state key="normal" title="Pick a puzzle pack"/>
                                 <connections>
                                     <segue destination="6MY-J7-d9l" kind="show" id="gwe-pa-wo0"/>
                                 </connections>
@@ -41,12 +41,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULO-d4-fVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-166" y="-461"/>
+            <point key="canvasLocation" x="-167.19999999999999" y="-461.01949025487261"/>
         </scene>
-        <!--Classes Table View Controller-->
+        <!--Puzzle packs-->
         <scene sceneID="Bdd-yF-QxF">
             <objects>
-                <tableViewController id="6MY-J7-d9l" customClass="ClassesTableViewController" customModule="bau" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Puzzle packs" id="6MY-J7-d9l" customClass="ClassesTableViewController" customModule="bau" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="z5g-xt-QZ8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="655" y="-461"/>
         </scene>
-        <!--Levels View Controller-->
+        <!--Levels-->
         <scene sceneID="iCU-4B-PqI">
             <objects>
-                <tableViewController id="Bhy-M2-o6J" customClass="LevelsViewController" customModule="bau" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Levels" id="Bhy-M2-o6J" customClass="LevelsViewController" customModule="bau" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2JP-yh-raN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

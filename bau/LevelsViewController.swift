@@ -13,9 +13,11 @@ class LevelsViewController: UITableViewController {
     var levels:Array = ["1","2","3","4","5","6","7","8","9","10"]
     var defaults = UserDefaults.standard
     var teacher = 0
+    var completedLevels:Array<String> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -51,14 +53,11 @@ class LevelsViewController: UITableViewController {
         
         let cell:LevelTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LevelTableViewCell
         
-        var completedLevelsArray = defaults.object(forKey: "completedLevels") as! Array<Int>
-        
-        if completedLevelsArray.contains(indexPath.row+1){
-            cell.levelNameLabel.textColor = UIColor.lightGray
+        var fileName = "Level_\(teacher)_\(levels[indexPath.row ])"
+        if(completedLevels.contains(fileName)){
+            cell.levelNameLabel?.textColor =  UIColor.lightGray
         }
-        
         cell.levelNameLabel?.text = "Level "+levels[indexPath.row ]
-
         return cell
     }
     

@@ -20,8 +20,9 @@ class GameViewController: UIViewController {
     var tapGestureRecognizer: UITapGestureRecognizer!
     var completed = false
     var gameOverMessage = "Game Over"
-    var completedLevels:Array<Int> = [0]
+    var completedLevels:Array<String> = []
     let defaults = UserDefaults.standard
+    var fileName = ""
     
     @IBOutlet weak var movesLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
@@ -59,7 +60,7 @@ class GameViewController: UIViewController {
     scene = GameScene(size: skView.bounds.size)
     scene.scaleMode = .aspectFill
     
-    let fileName = "Level_\(teacherName)_\(LevelNumber)"
+    fileName = "Level_\(teacherName)_\(LevelNumber)"
     
     level = Level(filename: fileName)
     scene.level = level
@@ -68,7 +69,7 @@ class GameViewController: UIViewController {
     scene.swipeHandler = handleSwipe
     
     skView.presentScene(scene)
-    completedLevels = defaults.object(forKey: "completedLevels") as! Array<Int>
+    completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
     beginGame()
   }
     
@@ -85,7 +86,7 @@ class GameViewController: UIViewController {
         scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .aspectFill
         
-        let fileName = "Level_\(teacherName)_\(LevelNumber)"
+        fileName = "Level_\(teacherName)_\(LevelNumber)"
         
         level = Level(filename: fileName)
         scene.level = level
@@ -94,7 +95,7 @@ class GameViewController: UIViewController {
         
         skView.presentScene(scene)
         
-        completedLevels = defaults.object(forKey: "completedLevels") as! Array<Int>
+        completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
         
         beginGame()
     }
@@ -129,7 +130,9 @@ class GameViewController: UIViewController {
             resetPuzzleButton.isHidden = true
             nextPuzzleButton.isHidden = false
             movesLabel.isHidden = true
-            completedLevels.append(LevelNumber)
+            if(!completedLevels.contains(fileName)){
+                completedLevels.append(fileName)
+            }
             defaults.set(completedLevels, forKey: "completedLevels")
             print(defaults.object(forKey: "completedLevels")!)
         }
@@ -166,6 +169,7 @@ class GameViewController: UIViewController {
     
     @IBAction func tapNextButton(_ sender: Any) {
         print("Next button tapped")
+        resetPuzzleButton.setTitle("Reset puzzle", for: UIControlState.normal)
         LevelNumber = LevelNumber+1
         viewWillAppear(true)
     }

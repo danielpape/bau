@@ -261,8 +261,9 @@ SWIFT_CLASS("_TtC3bau18GameViewController")
 @property (nonatomic, strong) UITapGestureRecognizer * _Null_unspecified tapGestureRecognizer;
 @property (nonatomic) BOOL completed;
 @property (nonatomic, copy) NSString * _Nonnull gameOverMessage;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull completedLevels;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults;
+@property (nonatomic, copy) NSString * _Nonnull fileName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified movesLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gameOverLabel;
@@ -299,6 +300,7 @@ SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull levels;
 @property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
 @property (nonatomic) NSInteger teacher;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
