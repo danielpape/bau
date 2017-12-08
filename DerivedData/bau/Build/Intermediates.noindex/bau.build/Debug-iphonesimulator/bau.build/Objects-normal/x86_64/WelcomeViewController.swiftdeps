@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["3bau21WelcomeViewControllerC", ""]
 provides-dynamic-lookup:
+- "barItem"
 - "coins"
-- "coinsLabel"
 - "defaults"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
@@ -19,36 +19,35 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Int"
 - !private "StringLiteralType"
-- "UILabel"
+- "UIBarButtonItem"
 - "UIViewController"
 - "UserDefaults"
 - "WelcomeViewController"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["So15CALayerDelegateP", "text"]
 - ["s7CVarArgP", "UserDefaults"]
+- !private ["s7CVarArgP", "barItem"]
 - !private ["s7CVarArgP", "coins"]
-- !private ["s7CVarArgP", "coinsLabel"]
 - !private ["s7CVarArgP", "defaults"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "object"]
 - ["s7CVarArgP", "standard"]
-- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
 - ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- !private ["s28CustomDebugStringConvertibleP", "barItem"]
 - !private ["s28CustomDebugStringConvertibleP", "coins"]
-- !private ["s28CustomDebugStringConvertibleP", "coinsLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "defaults"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "object"]
 - ["s28CustomDebugStringConvertibleP", "standard"]
-- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -57,14 +56,14 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "UserDefaults"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "barItem"]
 - !private ["s23CustomStringConvertibleP", "coins"]
-- !private ["s23CustomStringConvertibleP", "coinsLabel"]
 - !private ["s23CustomStringConvertibleP", "defaults"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "object"]
 - ["s23CustomStringConvertibleP", "standard"]
-- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
@@ -73,14 +72,14 @@ depends-member:
 - !private ["s9EncodableP", "init"]
 - ["s9EquatableP", "UserDefaults"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "barItem"]
 - !private ["s9EquatableP", "coins"]
-- !private ["s9EquatableP", "coinsLabel"]
 - !private ["s9EquatableP", "defaults"]
 - !private ["s9EquatableP", "didReceiveMemoryWarning"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "object"]
 - ["s9EquatableP", "standard"]
-- !private ["s9EquatableP", "text"]
+- !private ["s9EquatableP", "title"]
 - !private ["s9EquatableP", "viewDidLoad"]
 - ["s9EquatableP", ""]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -89,32 +88,32 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s8HashableP", "UserDefaults"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "barItem"]
 - !private ["s8HashableP", "coins"]
-- !private ["s8HashableP", "coinsLabel"]
 - !private ["s8HashableP", "defaults"]
 - !private ["s8HashableP", "didReceiveMemoryWarning"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "object"]
 - ["s8HashableP", "standard"]
-- !private ["s8HashableP", "text"]
+- !private ["s8HashableP", "title"]
 - !private ["s8HashableP", "viewDidLoad"]
 - ["s8HashableP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["So8NSCodingP", "UserDefaults"]
+- !private ["So8NSCodingP", "barItem"]
 - !private ["So8NSCodingP", "coins"]
-- !private ["So8NSCodingP", "coinsLabel"]
 - !private ["So8NSCodingP", "defaults"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "init"]
 - ["So26NSExtensionRequestHandlingP", "UserDefaults"]
+- !private ["So26NSExtensionRequestHandlingP", "barItem"]
 - !private ["So26NSExtensionRequestHandlingP", "coins"]
-- !private ["So26NSExtensionRequestHandlingP", "coinsLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "defaults"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
@@ -125,27 +124,27 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "Int"]
-- ["So8NSObjectC", "UILabel"]
+- ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UserDefaults"]
+- ["So8NSObjectC", "barItem"]
 - ["So8NSObjectC", "coins"]
-- ["So8NSObjectC", "coinsLabel"]
 - ["So8NSObjectC", "defaults"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "object"]
 - ["So8NSObjectC", "standard"]
-- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "title"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
 - ["So16NSObjectProtocolP", "UserDefaults"]
+- !private ["So16NSObjectProtocolP", "barItem"]
 - !private ["So16NSObjectProtocolP", "coins"]
-- !private ["So16NSObjectProtocolP", "coinsLabel"]
 - !private ["So16NSObjectProtocolP", "defaults"]
 - !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "object"]
 - ["So16NSObjectProtocolP", "standard"]
-- !private ["So16NSObjectProtocolP", "text"]
+- !private ["So16NSObjectProtocolP", "title"]
 - !private ["So16NSObjectProtocolP", "viewDidLoad"]
 - ["So16NSObjectProtocolP", ""]
 - !private ["So14NSSecureCodingP", "init"]
@@ -156,93 +155,84 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["So29UIAccessibilityIdentificationP", "text"]
-- !private ["So12UIAppearanceP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "title"]
+- !private ["So12UIAppearanceP", "title"]
 - ["So21UIAppearanceContainerP", "UserDefaults"]
+- !private ["So21UIAppearanceContainerP", "barItem"]
 - !private ["So21UIAppearanceContainerP", "coins"]
-- !private ["So21UIAppearanceContainerP", "coinsLabel"]
 - !private ["So21UIAppearanceContainerP", "defaults"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "init"]
-- !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So15UIBarButtonItemC", "title"]
+- !private ["So9UIBarItemC", "title"]
 - ["So18UIContentContainerP", "UserDefaults"]
+- !private ["So18UIContentContainerP", "barItem"]
 - !private ["So18UIContentContainerP", "coins"]
-- !private ["So18UIContentContainerP", "coinsLabel"]
 - !private ["So18UIContentContainerP", "defaults"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - ["So18UIContentContainerP", ""]
-- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
-- !private ["So17UICoordinateSpaceP", "text"]
-- !private ["So13UIDynamicItemP", "text"]
 - ["So18UIFocusEnvironmentP", "UserDefaults"]
+- !private ["So18UIFocusEnvironmentP", "barItem"]
 - !private ["So18UIFocusEnvironmentP", "coins"]
-- !private ["So18UIFocusEnvironmentP", "coinsLabel"]
 - !private ["So18UIFocusEnvironmentP", "defaults"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - ["So18UIFocusEnvironmentP", ""]
-- !private ["So11UIFocusItemP", "text"]
-- !private ["So7UILabelC", "text"]
 - ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
+- !private ["So30UIPasteConfigurationSupportingP", "barItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "coins"]
-- !private ["So30UIPasteConfigurationSupportingP", "coinsLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "defaults"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Int"]
-- ["So11UIResponderC", "UILabel"]
+- ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UserDefaults"]
+- ["So11UIResponderC", "barItem"]
 - ["So11UIResponderC", "coins"]
-- ["So11UIResponderC", "coinsLabel"]
 - ["So11UIResponderC", "defaults"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
 - ["So30UIResponderStandardEditActionsP", "UserDefaults"]
+- !private ["So30UIResponderStandardEditActionsP", "barItem"]
 - !private ["So30UIResponderStandardEditActionsP", "coins"]
-- !private ["So30UIResponderStandardEditActionsP", "coinsLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "defaults"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So35UISpringLoadedInteractionSupportingP", "title"]
 - ["So16UIStateRestoringP", "UserDefaults"]
+- !private ["So16UIStateRestoringP", "barItem"]
 - !private ["So16UIStateRestoringP", "coins"]
-- !private ["So16UIStateRestoringP", "coinsLabel"]
 - !private ["So16UIStateRestoringP", "defaults"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - ["So16UIStateRestoringP", ""]
 - ["So18UITraitEnvironmentP", "UserDefaults"]
+- !private ["So18UITraitEnvironmentP", "barItem"]
 - !private ["So18UITraitEnvironmentP", "coins"]
-- !private ["So18UITraitEnvironmentP", "coinsLabel"]
 - !private ["So18UITraitEnvironmentP", "defaults"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "init"]
-- !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - ["So18UITraitEnvironmentP", ""]
-- !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "Bool"]
 - !private ["So16UIViewControllerC", "Int"]
-- ["So16UIViewControllerC", "UILabel"]
+- ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UserDefaults"]
+- ["So16UIViewControllerC", "barItem"]
 - ["So16UIViewControllerC", "coins"]
-- ["So16UIViewControllerC", "coinsLabel"]
 - ["So16UIViewControllerC", "defaults"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
@@ -253,10 +243,10 @@ depends-member:
 - ["So12UserDefaultsC", "standard"]
 - ["3bau21WelcomeViewControllerC", "Bool"]
 - !private ["3bau21WelcomeViewControllerC", "Int"]
-- ["3bau21WelcomeViewControllerC", "UILabel"]
+- ["3bau21WelcomeViewControllerC", "UIBarButtonItem"]
 - ["3bau21WelcomeViewControllerC", "UserDefaults"]
+- ["3bau21WelcomeViewControllerC", "barItem"]
 - ["3bau21WelcomeViewControllerC", "coins"]
-- ["3bau21WelcomeViewControllerC", "coinsLabel"]
 - ["3bau21WelcomeViewControllerC", "defaults"]
 - ["3bau21WelcomeViewControllerC", "deinit"]
 - ["3bau21WelcomeViewControllerC", "didReceiveMemoryWarning"]
@@ -264,7 +254,6 @@ depends-member:
 - ["3bau21WelcomeViewControllerC", "viewDidLoad"]
 - ["3bau21WelcomeViewControllerC", "viewWillAppear"]
 - !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -275,14 +264,14 @@ depends-member:
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "barItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "coins"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "coinsLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "defaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -292,7 +281,6 @@ depends-member:
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
-- !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
@@ -329,24 +317,20 @@ depends-nominal:
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
+- !private "So15UIBarButtonItemC"
+- !private "So9UIBarItemC"
 - "So18UIContentContainerP"
-- !private "So30UIContentSizeCategoryAdjustingP"
-- !private "So17UICoordinateSpaceP"
-- !private "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
-- !private "So11UIFocusItemP"
-- !private "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - "So16UIStateRestoringP"
 - "So18UITraitEnvironmentP"
-- !private "So6UIViewC"
 - "So16UIViewControllerC"
 - "So12UserDefaultsC"
 - "3bau21WelcomeViewControllerC"
 - !private "s23_BidirectionalIndexableP"
-- !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -392,4 +376,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "a64b5a00a9f292c26220e16ac2b8410d"
+interface-hash: "bc3b6987dd8e2947308bfd99c81d3640"

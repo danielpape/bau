@@ -299,6 +299,7 @@ SWIFT_CLASS("_TtC3bau18LevelTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @interface LevelsViewController : UITableViewController
@@ -307,6 +308,7 @@ SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @property (nonatomic) NSInteger teacher;
 @property (nonatomic) NSInteger coins;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified barItem;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -325,7 +327,7 @@ SWIFT_CLASS("_TtC3bau21WelcomeViewController")
 @interface WelcomeViewController : UIViewController
 @property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
 @property (nonatomic) NSInteger coins;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified coinsLabel;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified barItem;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;

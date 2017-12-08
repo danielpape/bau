@@ -12,7 +12,8 @@ class WelcomeViewController: UIViewController {
     
     var defaults = UserDefaults.standard
     var coins = 0
-    @IBOutlet weak var coinsLabel: UILabel!
+    
+    @IBOutlet weak var barItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,9 @@ class WelcomeViewController: UIViewController {
         }else{
             coins = defaults.object(forKey: "coins") as! Int
         }
-        coinsLabel.text = "Coins: \(coins)"
+        barItem.title = "Coins: \(coins)"
+
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +35,7 @@ class WelcomeViewController: UIViewController {
         }else{
             coins = defaults.object(forKey: "coins") as! Int
         }
-        coinsLabel.text = "Coins: \(coins)"
+        barItem.title = "Coins: \(coins)"
     }
     
     override func didReceiveMemoryWarning() {

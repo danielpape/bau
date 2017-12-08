@@ -16,10 +16,14 @@ class LevelsViewController: UITableViewController {
     var coins = 0
     var completedLevels:Array<String> = []
 
+    @IBOutlet weak var barItem: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
         coins = defaults.object(forKey: "coins") as! Int
+        
+        barItem.title = "Coins: \(coins)"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

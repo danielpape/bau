@@ -30,23 +30,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pick a puzzle pack"/>
                                 <connections>
-                                    <segue destination="6MY-J7-d9l" kind="show" id="gwe-pa-wo0"/>
+                                    <segue destination="6MY-J7-d9l" kind="show" identifier="welcomeSegue" id="gwe-pa-wo0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coins: X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CP-3S-TE8">
-                                <rect key="frame" x="82" y="431" width="212" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Uwp-DX-2BE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CIO-P5-PcB"/>
+                    <navigationItem key="navigationItem" id="CIO-P5-PcB">
+                        <barButtonItem key="rightBarButtonItem" title="Coins: X" id="MBF-rB-umC"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="coinsLabel" destination="6CP-3S-TE8" id="eCd-Ek-fsr"/>
+                        <outlet property="barItem" destination="MBF-rB-umC" id="tiH-V3-iQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULO-d4-fVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,6 +87,8 @@
                             <outlet property="delegate" destination="6MY-J7-d9l" id="6Ic-Pe-RgU"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="Bhy-M2-o6J" kind="show" identifier="segue2" id="FWe-xR-tRf"/>
                     </connections>
@@ -142,8 +139,11 @@
                             <outlet property="delegate" destination="Bhy-M2-o6J" id="JUX-h4-pNU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DNH-hP-u4c"/>
+                    <navigationItem key="navigationItem" title="Levels" id="DNH-hP-u4c">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="XzA-gm-aat"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="barItem" destination="XzA-gm-aat" id="g3G-8Z-eLZ"/>
                         <segue destination="F19-63-2P2" kind="show" identifier="segue" id="Qml-ow-bgi"/>
                     </connections>
                 </tableViewController>
@@ -164,7 +164,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywf-QO-JJo">
-                                <rect key="frame" x="81" y="474" width="229" height="26"/>
+                                <rect key="frame" x="81" y="430" width="229" height="26"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAe-ip-4Le">
                                         <rect key="frame" x="0.0" y="0.0" width="121" height="20"/>
@@ -240,6 +240,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aPU-t9-baf"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="2iW-Ck-T3X"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="gameOverLabel" destination="haE-e5-waf" id="Q7n-tT-U9M"/>
                         <outlet property="levelLabel" destination="HAe-ip-4Le" id="A6Z-W1-GO8"/>
