@@ -21,6 +21,7 @@ class GameViewController: UIViewController {
     var completed = false
     var gameOverMessage = "Game Over"
     var completedLevels:Array<String> = []
+    var coins = 0
     let defaults = UserDefaults.standard
     var fileName = ""
     
@@ -70,6 +71,7 @@ class GameViewController: UIViewController {
     
     skView.presentScene(scene)
     completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
+    coins = defaults.object(forKey: "coins") as! Int
     beginGame()
   }
     
@@ -130,10 +132,12 @@ class GameViewController: UIViewController {
             resetPuzzleButton.isHidden = true
             nextPuzzleButton.isHidden = false
             movesLabel.isHidden = true
+            coins = coins+20
             if(!completedLevels.contains(fileName)){
                 completedLevels.append(fileName)
             }
             defaults.set(completedLevels, forKey: "completedLevels")
+            defaults.set(coins, forKey: "coins")
             print(defaults.object(forKey: "completedLevels")!)
         }
         

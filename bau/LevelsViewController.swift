@@ -13,11 +13,13 @@ class LevelsViewController: UITableViewController {
     var levels:Array = ["1","2","3","4","5","6","7","8","9","10"]
     var defaults = UserDefaults.standard
     var teacher = 0
+    var coins = 0
     var completedLevels:Array<String> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
+        coins = defaults.object(forKey: "coins") as! Int
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,9 +28,8 @@ class LevelsViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
         tableView.reloadData()
-        print("teacher is \(teacher)")
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,16 +11,35 @@ import UIKit
 class ClassesTableViewController: UITableViewController {
     
     var teachersArray = ["Gropius","Kandinsky","Breuer"]
+    var completedLevels = [""]
+    var unlockedTeachers = ["Gropius"]
     var defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        var emptyLevelsArray = [""]
+        if(defaults.object(forKey: "completedLevels")==nil){
+            defaults.set(emptyLevelsArray, forKey: "completedLevels")
+        }else{
+            completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
+        }
+        print(completedLevels)
+        if defaults.object(forKey: "coins") == nil{
+            defaults.set(0, forKey: "coins")
+        }
+        if defaults.object(forKey: "unlockedTeachers") == nil{
+            defaults.set(unlockedTeachers, forKey: "unlockedTeachers")
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,18 +62,23 @@ class ClassesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
+        var completedInSet = 0
         // Configure the cell...
         var completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
-        for teacher in 1...3{
-            for puzzle in 1...10{
-                if (!completedLevels.contains("Level_\(teacher)_\(puzzle)")){
-                    cell.textLabel?.textColor = UIColor.lightGray
+        for level in completedLevels{
+            if level.contains("_\(indexPath.row+1)_"){
+                completedInSet = completedInSet+1
             }
         }
+        
+        if(!unlockedTeachers.contains(teachersArray[indexPath.row])){
+            cell.textLabel?.textColor = UIColor.lightGray
+            cell.detailTextLabel?.text = "100 Coins"
+        }else{
+            cell.detailTextLabel?.text = "\(completedInSet)/10"
         }
         
-
+        
         cell.textLabel?.text = teachersArray[indexPath.row]
         return cell
     }

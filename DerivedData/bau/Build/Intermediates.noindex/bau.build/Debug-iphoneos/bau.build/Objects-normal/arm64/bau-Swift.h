@@ -173,9 +173,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import Foundation;
 @import SpriteKit;
 @import CoreGraphics;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -202,8 +202,30 @@ SWIFT_CLASS("_TtC3bau11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class SKNode;
+@class NSUserDefaults;
+@class UITableView;
+@class UITableViewCell;
+@class UIStoryboardSegue;
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC3bau26ClassesTableViewController")
+@interface ClassesTableViewController : UITableViewController
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull teachersArray;
+@property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class SKNode;
 @class UITouch;
 @class UIEvent;
 
@@ -227,22 +249,22 @@ SWIFT_CLASS("_TtC3bau9GameScene")
 @end
 
 @class UITapGestureRecognizer;
-@class NSUserDefaults;
 @class UILabel;
 @class UIButton;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC3bau18GameViewController")
 @interface GameViewController : UIViewController
 @property (nonatomic, strong) GameScene * _Null_unspecified scene;
 @property (nonatomic) NSInteger LevelNumber;
+@property (nonatomic) NSInteger teacherName;
 @property (nonatomic) NSInteger movesLeft;
 @property (nonatomic) NSInteger score;
 @property (nonatomic, strong) UITapGestureRecognizer * _Null_unspecified tapGestureRecognizer;
 @property (nonatomic) BOOL completed;
 @property (nonatomic, copy) NSString * _Nonnull gameOverMessage;
-@property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull completedLevels;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults;
+@property (nonatomic, copy) NSString * _Nonnull fileName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified movesLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified levelLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified gameOverLabel;
@@ -273,14 +295,13 @@ SWIFT_CLASS("_TtC3bau18LevelTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @interface LevelsViewController : UITableViewController
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull levels;
 @property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull completedLevels;
+@property (nonatomic) NSInteger teacher;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;

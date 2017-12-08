@@ -212,8 +212,11 @@ SWIFT_CLASS("_TtC3bau11AppDelegate")
 SWIFT_CLASS("_TtC3bau26ClassesTableViewController")
 @interface ClassesTableViewController : UITableViewController
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull teachersArray;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull unlockedTeachers;
 @property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -263,6 +266,7 @@ SWIFT_CLASS("_TtC3bau18GameViewController")
 @property (nonatomic) BOOL completed;
 @property (nonatomic, copy) NSString * _Nonnull gameOverMessage;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
+@property (nonatomic) NSInteger coins;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull defaults;
 @property (nonatomic, copy) NSString * _Nonnull fileName;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified movesLabel;
@@ -301,6 +305,7 @@ SWIFT_CLASS("_TtC3bau20LevelsViewController")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull levels;
 @property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
 @property (nonatomic) NSInteger teacher;
+@property (nonatomic) NSInteger coins;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull completedLevels;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -311,6 +316,19 @@ SWIFT_CLASS("_TtC3bau20LevelsViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC3bau21WelcomeViewController")
+@interface WelcomeViewController : UIViewController
+@property (nonatomic, strong) NSUserDefaults * _Nonnull defaults;
+@property (nonatomic) NSInteger coins;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified coinsLabel;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
