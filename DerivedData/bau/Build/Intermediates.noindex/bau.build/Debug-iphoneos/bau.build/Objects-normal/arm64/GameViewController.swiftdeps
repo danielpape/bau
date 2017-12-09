@@ -8,6 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 - "LevelNumber"
 - "beginGame"
+- "coins"
 - "completed"
 - "completedLevels"
 - "defaults"
@@ -47,6 +48,7 @@ depends-top-level:
 - "CastingPrecedence"
 - "GameScene"
 - "GameViewController"
+- !private "Int"
 - "Level"
 - !private "SKView"
 - "String"
@@ -92,6 +94,7 @@ depends-member:
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "beginGame"]
 - !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "coins"]
 - !private ["s7CVarArgP", "completedLevels"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "defaults"]
@@ -145,6 +148,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "beginGame"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "coins"]
 - !private ["s28CustomDebugStringConvertibleP", "completedLevels"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "defaults"]
@@ -204,6 +208,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "beginGame"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "coins"]
 - !private ["s23CustomStringConvertibleP", "completedLevels"]
 - !private ["s23CustomStringConvertibleP", "contains"]
 - !private ["s23CustomStringConvertibleP", "defaults"]
@@ -264,6 +269,7 @@ depends-member:
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "beginGame"]
 - !private ["s9EquatableP", "bounds"]
+- !private ["s9EquatableP", "coins"]
 - !private ["s9EquatableP", "completedLevels"]
 - !private ["s9EquatableP", "defaults"]
 - !private ["s9EquatableP", "fileName"]
@@ -323,6 +329,7 @@ depends-member:
 - ["3bau18GameViewControllerC", "Array"]
 - ["3bau18GameViewControllerC", "Bool"]
 - ["3bau18GameViewControllerC", "GameScene"]
+- !private ["3bau18GameViewControllerC", "Int"]
 - ["3bau18GameViewControllerC", "Level"]
 - ["3bau18GameViewControllerC", "LevelNumber"]
 - !private ["3bau18GameViewControllerC", "SKView"]
@@ -336,6 +343,7 @@ depends-member:
 - ["3bau18GameViewControllerC", "UITapGestureRecognizer"]
 - ["3bau18GameViewControllerC", "UserDefaults"]
 - ["3bau18GameViewControllerC", "beginGame"]
+- ["3bau18GameViewControllerC", "coins"]
 - ["3bau18GameViewControllerC", "completed"]
 - ["3bau18GameViewControllerC", "completedLevels"]
 - ["3bau18GameViewControllerC", "defaults"]
@@ -382,6 +390,7 @@ depends-member:
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "beginGame"]
 - !private ["s8HashableP", "bounds"]
+- !private ["s8HashableP", "coins"]
 - !private ["s8HashableP", "completedLevels"]
 - !private ["s8HashableP", "defaults"]
 - !private ["s8HashableP", "fileName"]
@@ -439,6 +448,7 @@ depends-member:
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "beginGame"]
 - !private ["So8NSCodingP", "bounds"]
+- !private ["So8NSCodingP", "coins"]
 - !private ["So8NSCodingP", "completedLevels"]
 - !private ["So8NSCodingP", "defaults"]
 - !private ["So8NSCodingP", "fileName"]
@@ -488,6 +498,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIControlState"]
 - ["So26NSExtensionRequestHandlingP", "UserDefaults"]
 - !private ["So26NSExtensionRequestHandlingP", "beginGame"]
+- !private ["So26NSExtensionRequestHandlingP", "coins"]
 - !private ["So26NSExtensionRequestHandlingP", "completedLevels"]
 - !private ["So26NSExtensionRequestHandlingP", "defaults"]
 - !private ["So26NSExtensionRequestHandlingP", "fileName"]
@@ -517,6 +528,7 @@ depends-member:
 - ["So8NSObjectC", "Array"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "GameScene"]
+- !private ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "Level"]
 - ["So8NSObjectC", "LevelNumber"]
 - !private ["So8NSObjectC", "SKView"]
@@ -535,6 +547,7 @@ depends-member:
 - !private ["So8NSObjectC", "backgroundColor"]
 - ["So8NSObjectC", "beginGame"]
 - !private ["So8NSObjectC", "bounds"]
+- ["So8NSObjectC", "coins"]
 - ["So8NSObjectC", "completed"]
 - ["So8NSObjectC", "completedLevels"]
 - ["So8NSObjectC", "defaults"]
@@ -591,6 +604,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "beginGame"]
 - !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "coins"]
 - !private ["So16NSObjectProtocolP", "completedLevels"]
 - !private ["So16NSObjectProtocolP", "defaults"]
 - !private ["So16NSObjectProtocolP", "fileName"]
@@ -712,6 +726,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "beginGame"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
+- !private ["So21UIAppearanceContainerP", "coins"]
 - !private ["So21UIAppearanceContainerP", "completedLevels"]
 - !private ["So21UIAppearanceContainerP", "defaults"]
 - !private ["So21UIAppearanceContainerP", "fileName"]
@@ -750,6 +765,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIControlState"]
 - ["So18UIContentContainerP", "UserDefaults"]
 - !private ["So18UIContentContainerP", "beginGame"]
+- !private ["So18UIContentContainerP", "coins"]
 - !private ["So18UIContentContainerP", "completedLevels"]
 - !private ["So18UIContentContainerP", "defaults"]
 - !private ["So18UIContentContainerP", "fileName"]
@@ -805,6 +821,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "beginGame"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
+- !private ["So18UIFocusEnvironmentP", "coins"]
 - !private ["So18UIFocusEnvironmentP", "completedLevels"]
 - !private ["So18UIFocusEnvironmentP", "defaults"]
 - !private ["So18UIFocusEnvironmentP", "fileName"]
@@ -868,6 +885,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "beginGame"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
+- !private ["So30UIPasteConfigurationSupportingP", "coins"]
 - !private ["So30UIPasteConfigurationSupportingP", "completedLevels"]
 - !private ["So30UIPasteConfigurationSupportingP", "defaults"]
 - !private ["So30UIPasteConfigurationSupportingP", "fileName"]
@@ -901,6 +919,7 @@ depends-member:
 - ["So11UIResponderC", "Array"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "GameScene"]
+- !private ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "Level"]
 - ["So11UIResponderC", "LevelNumber"]
 - !private ["So11UIResponderC", "SKView"]
@@ -919,6 +938,7 @@ depends-member:
 - !private ["So11UIResponderC", "backgroundColor"]
 - ["So11UIResponderC", "beginGame"]
 - !private ["So11UIResponderC", "bounds"]
+- ["So11UIResponderC", "coins"]
 - ["So11UIResponderC", "completed"]
 - ["So11UIResponderC", "completedLevels"]
 - ["So11UIResponderC", "defaults"]
@@ -971,6 +991,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "beginGame"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
+- !private ["So30UIResponderStandardEditActionsP", "coins"]
 - !private ["So30UIResponderStandardEditActionsP", "completedLevels"]
 - !private ["So30UIResponderStandardEditActionsP", "defaults"]
 - !private ["So30UIResponderStandardEditActionsP", "fileName"]
@@ -1011,6 +1032,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIControlState"]
 - ["So16UIStateRestoringP", "UserDefaults"]
 - !private ["So16UIStateRestoringP", "beginGame"]
+- !private ["So16UIStateRestoringP", "coins"]
 - !private ["So16UIStateRestoringP", "completedLevels"]
 - !private ["So16UIStateRestoringP", "defaults"]
 - !private ["So16UIStateRestoringP", "fileName"]
@@ -1042,6 +1064,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "beginGame"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "coins"]
 - !private ["So18UITraitEnvironmentP", "completedLevels"]
 - !private ["So18UITraitEnvironmentP", "defaults"]
 - !private ["So18UITraitEnvironmentP", "fileName"]
@@ -1080,6 +1103,7 @@ depends-member:
 - ["So16UIViewControllerC", "Array"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "GameScene"]
+- !private ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "Level"]
 - ["So16UIViewControllerC", "LevelNumber"]
 - !private ["So16UIViewControllerC", "SKView"]
@@ -1093,6 +1117,7 @@ depends-member:
 - ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", "UserDefaults"]
 - ["So16UIViewControllerC", "beginGame"]
+- ["So16UIViewControllerC", "coins"]
 - ["So16UIViewControllerC", "completed"]
 - ["So16UIViewControllerC", "completedLevels"]
 - ["So16UIViewControllerC", "defaults"]
@@ -1169,6 +1194,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "beginGame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "coins"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "completedLevels"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "defaults"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fileName"]
@@ -1346,4 +1372,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "12b498057e9246f575024fcdd64a4835"
+interface-hash: "d5cb14f66e0391fc685c20af0c341a96"

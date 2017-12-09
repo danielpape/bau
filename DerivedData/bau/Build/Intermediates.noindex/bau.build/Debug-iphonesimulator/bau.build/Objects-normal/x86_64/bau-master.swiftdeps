@@ -1,12 +1,12 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "fc520bb3cc1050435fc12b74daf9bba7"
-build_time: [1512721006, 502673000]
+build_time: [1512863028, 411158000]
 inputs:
   "/Users/dan/Developer/iOS/bau/bau/Level.swift": [1512633303, 0]
   "/Users/dan/Developer/iOS/bau/bau/LevelsViewController.swift": [1512720845, 0]
   "/Users/dan/Developer/iOS/bau/bau/GameScene.swift": [1512220234, 0]
   "/Users/dan/Developer/iOS/bau/bau/Shape.swift": [1512248041, 0]
-  "/Users/dan/Developer/iOS/bau/bau/ClassesTableViewController.swift": [1512719962, 0]
+  "/Users/dan/Developer/iOS/bau/bau/ClassesTableViewController.swift": [1512723683, 0]
   "/Users/dan/Developer/iOS/bau/bau/Extensions.swift": [1512217490, 0]
   "/Users/dan/Developer/iOS/bau/bau/WelcomeViewController.swift": [1512721006, 0]
   "/Users/dan/Developer/iOS/bau/bau/Tile.swift": [1512217490, 0]

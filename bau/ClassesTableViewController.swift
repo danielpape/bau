@@ -17,9 +17,9 @@ class ClassesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var emptyLevelsArray = [""]
+        let emptyLevelsArray:Array<String> = ["",""]
         if(defaults.object(forKey: "completedLevels")==nil){
-            defaults.set(emptyLevelsArray, forKey: "completedLevels")
+            defaults.set(emptyLevelsArray, forKey: "completedLevels") as! Array<String>
         }else{
             completedLevels = defaults.object(forKey: "completedLevels") as! Array<String>
         }
