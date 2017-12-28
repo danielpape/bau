@@ -178,14 +178,14 @@ class GameScene: SKScene {
         spriteA.zPosition = 100
         spriteB.zPosition = 90
         
-        let duration: TimeInterval = 0.3
+        let duration: TimeInterval = 0.16
         
         let moveA = SKAction.move(to: spriteB.position, duration: duration)
-        moveA.timingMode = .easeOut
+        moveA.timingMode = .easeInEaseOut
         spriteA.run(moveA, completion: completion)
         
         let moveB = SKAction.move(to: spriteA.position, duration: duration)
-        moveB.timingMode = .easeOut
+        moveB.timingMode = .easeInEaseOut
         spriteB.run(moveB)
     }
 
